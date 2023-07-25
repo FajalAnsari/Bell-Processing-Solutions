@@ -5,10 +5,14 @@
     font-family: 'Poppins', sans-serif;   
      
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: #0093E9;
     background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
+/* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
 nav.navbar{
     background-color: rgba(255, 255, 255, 0.458);
 }
@@ -17,11 +21,54 @@ ul{
 }
 li.nav-item{
     margin: 0px 10px 0px 10px;
-
+    padding: 5px;
+    
 }
 li.nav-item:hover{
     background-color: rgba(255, 255, 255, 0.158);
     margin: 2px 10px 2px 10px;
     border-radius: 5px;
+}
+/* -------------------------------------------NAVBAR STYLING ENDED----------------------------------------------------*/
+/* -------------------------------------------SLIDING ANIMATION STYING STARTED----------------------------------------------------*/
+/*  Customize the carousel height and width */
+#carousel {
+    width: 100%;
+    max-width: auto; 
+    margin: 0 auto;
+}
+
+/*  Center the images within the carousel */
+#carousel .carousel-inner img {
+    height: 791px;
+    display: block;
+    margin: 0 auto;
 
 }
+/* Images Text */
+.centered {
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight:bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
+/* OUR SERVICES PART STARTED */
+h2.ourservices{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    color: white;
+}
+
+div.services{
+    display: fle
+}
+/* OUR SERVICES PART ENDED */
+
+/* ------------------------------------------------FOOTER STYLING----------------------------------------------------------------------------- */
+
+/* ------------------------------------------------FOOTER STYLING----------------------------------------------------------------------------- */
