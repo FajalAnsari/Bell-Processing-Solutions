@@ -56,34 +56,7 @@ li.nav-item:hover{
     transform: translate(-50%, -50%);
   }
 /* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
-/* .typed {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    
-  }
-  
-  .typed::after {
-    content: "|";
-    margin-left: 5px;
-    animation: blink .7s infinite;
-  }
-  
-  @keyframes typing {
-      from { width: 0 }
-      to { width:100% }
-  }
-  
-  @keyframes blink {
-      to { opacity: .0 }
-  }
-  
-  .typed{
-      animation-name: typing;
-      animation-duration: 5s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-  } */
+
 /* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
 /* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
 /* OUR SERVICES PART STARTED */
@@ -124,6 +97,83 @@ a.servicebtn{
     
 }
 /* OUR SERVICES PART ENDED */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------CONTACT US PAGE STARTED------------------------------------------------------------ */
+body.contactusbody{
+    background: white;
+    background-color: white;
+}
+div.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    flex-shrink: initial;
+    height: 40vh;
+    filter: brightness(0.5);
+    margin-bottom: 20px;
+}
+div.hero h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite, -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
+    text-align: center;
+}
+
+div.contactformsection{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: initial;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+div.cdetails{
+    align-items: center;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.668);
+    padding: 50px 40px 40px 40px;
+    /* border-radius: 50%; */
+}
+@media (max-width: 1400px) {
+    div.cdetails {
+     width: 100%;
+    }
+}
+div.form{
+  font-weight: bold;
+  padding: 30px;
+}
+div.form:hover{
+    background-color: rgba(245, 245, 245, 0.668);
+
+}
+
+input.cs,textarea.cs{
+    background-color: transparent;
+    border-color: white;
+}
+button.Submit{
+    border-color: rgba(0, 255, 255, 0.468);
+}
+/* -----------------------------------------------------CONTACT US PAGE ENDED------------------------------------------------------------ */
 
 /* ------------------------------------------------FOOTER STYLING----------------------------------------------------------------------------- */
 

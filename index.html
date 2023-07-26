@@ -13,42 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap"
     rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      jQuery("#navbar").load("navbar.html");
+      jQuery("#footer").load("footer.html");
+    });
+  </script>
   <script src="https://kit.fontawesome.com/91b027ae4c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-------------------------------------------------NAVBAR STARTED------------------------------------------------------------------->
-  <header>
-    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="IMAGES/logo_still.png" alt="Bell Processing Solutions Logo" class="img-fluid" />
-        </a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapser" aria-controls="collapser"
-          aria-expanded="false" aria-label="Expand navigation">
-          <div class="navbar-toggler-icon"></div>
-        </button>
-        <div class="collapse navbar-collapse" id="collapser">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products & Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Free Analysis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PCI Compliance</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <header id="navbar">
   </header>
   <!-------------------------------------------------NAVBAR ENDED------------------------------------------------------------------->
   <!-------------------------------------------------SLIDING ANIMATION STARTED------------------------------------------------------------------->
@@ -168,124 +144,7 @@
     <!-------------------------------------------------OUR SERVICES ENDED------------------------------------------------------------------->
   </main>
   <!-------------------------------------------------FOOTER STARTED------------------------------------------------------------------->
-  <footer class="text-center text-lg-start text-white" style="background-color: rgba(255, 218, 185, 0.692)">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">
-              BELL PROCESSING SOLUTIONS
-            </h6>
-            <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <hr class="w-100 clearfix d-md-none" />
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-            <p>
-              <a class="text-white">MDBootstrap</a>
-            </p>
-            <p>
-              <a class="text-white">MDWordPress</a>
-            </p>
-            <p>
-              <a class="text-white">BrandFlow</a>
-            </p>
-            <p>
-              <a class="text-white">Bootstrap Angular</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <hr class="w-100 clearfix d-md-none" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-            <p>
-              <a class="text-white">Your Account</a>
-            </p>
-            <p>
-              <a class="text-white">Become an Affiliate</a>
-            </p>
-            <p>
-              <a class="text-white">Shipping Rates</a>
-            </p>
-            <p>
-              <a class="text-white">Help</a>
-            </p>
-          </div>
-
-          <!-- Grid column -->
-          <hr class="w-100 clearfix d-md-none" />
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p>
-              <i class="fas fa-home mr-3"></i> 19355 TURNBERRY WAY SUITE 27D
-              <br />AVENTURA , FLORIDA 33180
-            </p>
-            <p>
-              <i class="fas fa-envelope mr-3"></i>
-              INFO@BELLPROCESSINGSOLUTIONS.COM
-            </p>
-            <p><i class="fas fa-phone mr-3"></i> 1.877.911.BELL</p>
-            <p><i class="fas fa-print mr-3"></i>212.624.4641</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-
-      <hr class="my-3" />
-
-      <!-- Section: Copyright -->
-      <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-          <!-- Grid column -->
-          <div class="col-md-7 col-lg-8 text-center text-md-start">
-            <!-- Copyright -->
-            <div class="p-3">
-              ©2014 - 2020 Copyright:
-              <a class="text-white" href="index.html">BELL PROCESSING SOLUTIONS</a>
-            </div>
-            <!-- Copyright -->
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                class="fab fa-facebook-f"></i></a>
-
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                class="fab fa-twitter"></i></a>
-
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                class="fab fa-linkedin"></i></a>
-          </div>
-          <!-- Grid column -->
-        </div>
-      </section>
-      <!-- Section: Copyright -->
-    </div>
-    <!-- Grid container -->
+  <footer id="footer">
   </footer>
   <!-- Footer -->
   <!-------------------------------------------------FOOTER ENDED------------------------------------------------------------------->
