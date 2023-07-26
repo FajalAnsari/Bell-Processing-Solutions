@@ -55,17 +55,73 @@ li.nav-item:hover{
     left: 50%;
     transform: translate(-50%, -50%);
   }
+/* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
+/* .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    
+  }
+  
+  .typed::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink .7s infinite;
+  }
+  
+  @keyframes typing {
+      from { width: 0 }
+      to { width:100% }
+  }
+  
+  @keyframes blink {
+      to { opacity: .0 }
+  }
+  
+  .typed{
+      animation-name: typing;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+  } */
+/* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
 /* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
 /* OUR SERVICES PART STARTED */
-h2.ourservices{
+h1.ourservices{
     text-align: center;
-    font-size: xx-large;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: 900;
     color: white;
 }
 
-div.services{
-    display: fle
+div.pands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div.servicecards{
+    margin: 0 0px 10px 0px ;
+    border-color: rgb(88, 160, 232) ;
+    border-width: 5px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.576);
+/*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ */
+}
+div.servicecards:hover{
+    box-shadow: 0 4px 8px 0 rgba(10, 251, 255, 0.714), 0 6px 20px 0 rgb(17, 28, 252);
+
+}
+img.serviceimg{
+    border-color: black;
+    border-width: 5px;
+
+}
+
+a.servicebtn{
+    border-color: black;
+    border-width: 2px;
+    
 }
 /* OUR SERVICES PART ENDED */
 
