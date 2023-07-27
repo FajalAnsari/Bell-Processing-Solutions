@@ -101,7 +101,40 @@ a.servicebtn{
 
 
 
+/* -----------------------------------------------------FREE ANALYSIS PAGE STARTED------------------------------------------------------------ */
 
+body.freeanalysisbody{
+    background: white;
+    background-color: white;
+}
+
+
+
+div.freeanalysis-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center ;
+    flex-shrink: initial;
+    height: 40vh;
+    margin-bottom: 20px;
+    /* filter: brightness(0.5); */
+}
+
+div.freeanalysis-hero h1{
+    font-size: 4rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0), -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+    text-align: center;
+}
+
+div.freeanalysis{
+margin: 0 8px 0 8px;
+}
+
+/* -----------------------------------------------------FREE ANALYSIS PAGE ENDED------------------------------------------------------------ */
 
 
 
@@ -283,8 +316,6 @@ div.pcisecurity-hero{
     background-position: center center;
     flex-shrink: initial;
     height: 40vh;
-    /* filter: brightness(0.5); */
-   /*  margin-top: -40px; */
     margin-bottom: 20px;
 }
 div.pcisecurity-hero h1{
@@ -346,6 +377,51 @@ div.pbcp{
 
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
 
+body.applynowbody{
+    background: whitesmoke;
+    background-color: whitesmoke;
+}
+
+
+div.applynow-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    flex-shrink: initial;
+    height: 40vh;
+
+}
+
+div.applynow-hero h1{
+    font-size: 4rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke, -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
+    text-align: center;
+}
+
+
+div.applynowform{
+    margin: 0 30px 10px 30px;
+    background-color: rgba(127, 255, 212, 0.349);
+}
+
+div.applynowform:hover{
+    box-shadow: 0 0 5px rgba(127, 255, 212, 0.349);
+
+}
+
+div.applynowsubmit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.apn,select.apn{
+    background-color: transparent;
+}
 /* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
 
 
