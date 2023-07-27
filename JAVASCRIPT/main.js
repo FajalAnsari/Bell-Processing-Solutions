@@ -19,3 +19,20 @@ function typeWriter() {
   }
 }
 //Typing animation for the sliders text
+
+
+/* Faqs Section functionality started */ 
+function toggleAnswer(questionId) {
+  var answer = document.getElementById('answer' + questionId);
+  var arrow = document.querySelector('.question:nth-child(' + questionId + ') .arrow');
+  
+  if (answer.style.display === 'none') {
+      answer.style.display = 'block';
+      arrow.style.transform = 'rotate(-135deg)';
+  } else {
+      answer.style.display = 'none';
+      arrow.style.transform = 'rotate(-45deg)';
+  }
+}
+
+/* Faqs Section functionality Ended */ 
