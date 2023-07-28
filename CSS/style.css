@@ -140,6 +140,154 @@ div.ecommerce_mailorde-hero h1 {
 
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
+/* -----------------------------------------------------Check Guarantee PAGE STARTED------------------------------------------------------------ */
+div.checkguarantee-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.checkguarantee-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+
+
+/* -----------------------------------------------------Check Guarantee PAGE ENDED------------------------------------------------------------ */
+
+
+/* -----------------------------------------------------MCR PAGE STARTED------------------------------------------------------------ */
+
+div.mcr-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.mcr-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+/* -----------------------------------------------------MCR PAGE ENDED------------------------------------------------------------ */
+/* -----------------------------------------------------MCPAY PAGE STARTED------------------------------------------------------------ */
+
+
+div.mpay-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.mpay-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+
+/* -----------------------------------------------------MCPAY PAGE ENDED------------------------------------------------------------ */
+
+/* -----------------------------------------------------GIFT AND LOYALTY CARDS  PAGE STARTED------------------------------------------------------------ */
+
+div.giftandloyalty-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.giftandloyalty-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+/* -----------------------------------------------------GIFT AND LOYALTY CARDS  PAGE ENDED------------------------------------------------------------ */
+
+
+/* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE STARTED------------------------------------------------------------ */
+
+div.prepaid-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.prepaid-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+/* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE ENDED------------------------------------------------------------ */
+
+
+/* -----------------------------------------------------FRAUD BLASTER  PAGE STARTED------------------------------------------------------------ */
+
+div.fraudblaster-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.fraudblaster-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* -----------------------------------------------------FRAUD BLASTER  PAGE ENDED------------------------------------------------------------ */
+
 /* -----------------------------------------------------FREE ANALYSIS PAGE STARTED------------------------------------------------------------ */
 
 body.freeanalysisbody {
