@@ -1,357 +1,384 @@
-
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Poppins', sans-serif;   
-     
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    background-color: #0093E9;
-    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+body {
+  background-color: #0093e9;
+  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
-nav.navbar{
-    background-color: rgba(255, 255, 255, 0.458);
+nav.navbar {
+  background-color: rgba(255, 255, 255, 0.458);
 }
-ul{
-    margin: 0 40px 0 0;
+ul {
+  margin: 0 40px 0 0;
 }
-li.nav-item{
-    margin: 0px 10px 0px 10px;
-    padding: 5px;
-    
+li.nav-item {
+  margin: 0px 10px 0px 10px;
+  padding: 5px;
 }
-li.nav-item:hover{
-    background-color: rgba(255, 255, 255, 0.158);
-    margin: 2px 10px 2px 10px;
-    border-radius: 5px;
+li.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+  margin: 2px 10px 2px 10px;
+  border-radius: 5px;
 }
 /* -------------------------------------------NAVBAR STYLING ENDED----------------------------------------------------*/
 /* -------------------------------------------SLIDING ANIMATION STYING STARTED----------------------------------------------------*/
 /*  Customize the carousel height and width */
 #carousel {
-    width: 100%;
-    max-width: auto; 
-    margin: 0 auto;
+  width: 100%;
+  max-width: auto;
+  margin: 0 auto;
 }
 
 /*  Center the images within the carousel */
 #carousel .carousel-inner img {
-    height: 791px;
-    display: block;
-    margin: 0 auto;
-
+  height: 791px;
+  display: block;
+  margin: 0 auto;
 }
 /* Images Text */
 .centered {
-    color: whitesmoke;
-    font-size: 3rem;
-    font-weight:bolder;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
 
 /* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
 /* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
 /* OUR SERVICES PART STARTED */
-h1.ourservices{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 900;
-    color: white;
+h1.ourservices {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
 }
 
-div.pands{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+div.pands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-div.servicecards{
-    margin: 0 0px 10px 0px ;
-    border-color: rgb(88, 160, 232) ;
-    border-width: 5px;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.576);
-/*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+div.servicecards {
+  margin: 0 0px 10px 0px;
+  border-color: rgb(88, 160, 232);
+  border-width: 5px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.576);
+  /*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  */
 }
-div.servicecards:hover{
-    box-shadow: 0 4px 8px 0 rgba(10, 251, 255, 0.714), 0 6px 20px 0 rgb(17, 28, 252);
-
+div.servicecards:hover {
+  box-shadow: 0 4px 8px 0 rgba(10, 251, 255, 0.714),
+    0 6px 20px 0 rgb(17, 28, 252);
 }
-img.serviceimg{
-    border-color: black;
-    border-width: 5px;
-
+img.serviceimg {
+  border-color: black;
+  border-width: 5px;
 }
 
-a.servicebtn{
-    border-color: black;
-    border-width: 2px;
-    
+a.servicebtn {
+  border-color: black;
+  border-width: 2px;
 }
 /* OUR SERVICES PART ENDED */
 
+/* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE STARTED------------------------------------------------------------ */
+
+div.ccanddc-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.ccanddc-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE ENDED------------------------------------------------------------ */
 
 
+/* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
+div.ecommerce_mailorde-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.ecommerce_mailorde-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+
+/* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------FREE ANALYSIS PAGE STARTED------------------------------------------------------------ */
 
-body.freeanalysisbody{
-    background: white;
-    background-color: white;
+body.freeanalysisbody {
+  background: white;
+  background-color: white;
 }
 
-
-
-div.freeanalysis-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center ;
-    flex-shrink: initial;
-    height: 40vh;
-    margin-bottom: 20px;
-    /* filter: brightness(0.5); */
+div.freeanalysis-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: initial;
+  height: 40vh;
+  margin-bottom: 20px;
+  /* filter: brightness(0.5); */
 }
 
-div.freeanalysis-hero h1{
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0), -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-    text-align: center;
+div.freeanalysis-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0),
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
 }
 
-div.freeanalysis{
-margin: 0 8px 0 8px;
+div.freeanalysis {
+  margin: 0 8px 0 8px;
 }
 
 /* -----------------------------------------------------FREE ANALYSIS PAGE ENDED------------------------------------------------------------ */
 
-
-
-
-
 /* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-body.pcicombody{
-    background: white;
-    background-color: white;
+body.pcicombody {
+  background: white;
+  background-color: white;
 }
 
-div.pci{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    margin: 0 10px 10px 10px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: rgba(244, 255, 127, 0.278);
+div.pci {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(244, 255, 127, 0.278);
 }
-div.pcicompliance-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center ;
-    flex-shrink: initial;
-    height: 40vh;
-    /* filter: brightness(0.5); */
-    margin-bottom: 20px;
+div.pcicompliance-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: initial;
+  height: 40vh;
+  /* filter: brightness(0.5); */
+  margin-bottom: 20px;
 }
-div.pcicompliance-hero h1{
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite, -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
-    text-align: center;
+div.pcicompliance-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
+    -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
+  text-align: center;
 }
-
-
 
 /* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
 /* ----------------------------------------------------- ABOUT PCI PAGE STARTED------------------------------------------------------------ */
-body.aboutpci{
-    background: whitesmoke;
-    background-color: whitesmoke;
+body.aboutpci {
+  background: whitesmoke;
+  background-color: whitesmoke;
 }
-div.aboutpcibody{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    margin: 0 10px 10px 10px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: rgba(244, 255, 127, 0.278);
+div.aboutpcibody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(244, 255, 127, 0.278);
 }
-div.aboutpci-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    flex-shrink: initial;
-    height: 40vh;
-    /* filter: brightness(0.5); */
-    margin-bottom: 20px;
+div.aboutpci-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  flex-shrink: initial;
+  height: 40vh;
+  /* filter: brightness(0.5); */
+  margin-bottom: 20px;
 }
-div.aboutpci-hero h1{
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite, -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
-    text-align: center;
+div.aboutpci-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
+    -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
+  text-align: center;
 }
-
 
 /* ----------------------------------------------------- ABOUT PCI PAGE ENDED------------------------------------------------------------ */
 
-
-
-
 /* ----------------------------------------------------- PCI FAQS PAGE STARTED------------------------------------------------------------ */
-body.pcifaqsbody{
-    background: white;
-    background-color: white;
+body.pcifaqsbody {
+  background: white;
+  background-color: white;
 }
 
-div.pcifaqs-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    flex-shrink: initial;
-    height: 40vh;
-    /* filter: brightness(0.5); */
-    margin-bottom: 20px;
+div.pcifaqs-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  flex-shrink: initial;
+  height: 40vh;
+  /* filter: brightness(0.5); */
+  margin-bottom: 20px;
 }
-div.pcifaqs-hero h1{
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke, -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-    text-align: center;
+div.pcifaqs-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
+  text-align: center;
 }
 
 /* Faqs Section Started */
 
 div.faq {
-    display: flex;
-    padding: 20px;
-    border-radius: 20px;
-    color: white;
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
 }
-  div.q-and-a {
-/*     display: flex; */
-/*     flex-direction: column;
+div.q-and-a {
+  /*     display: flex; */
+  /*     flex-direction: column;
     justify-content: center; */
-    margin-top: 20px;
+  margin-top: 20px;
 }
-  
-  div.question {
-    display: flex;
-   /*  justify-content: center; */
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 20px;
-    
-    background-color: rgba(128, 128, 128, 0.492);
-/*     border-bottom: none; */
 
- }
-  
-  span.arrow {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-top: 10px solid #000;
-    border-left: 10px solid#000;
-    border-bottom: 10px solid #000;
-    border-right: 10px solid #000;
-    border-radius: 50%;
-    transform: rotate(-45deg);
-    margin-right: 10px;
-  }
-  
-  span.question-text {
-    font-weight: bold;
-  }
-  
-  div.answer {
-    display: none;
-    padding: 10px;
-    font-weight: 900;
-    color: rgba(128, 128, 128, 0.492);
-  }
-  /* Faqs Section Ended */
+div.question {
+  display: flex;
+  /*  justify-content: center; */
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 20px;
 
+  background-color: rgba(128, 128, 128, 0.492);
+  /*     border-bottom: none; */
+}
+
+span.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 10px solid #000;
+  border-left: 10px solid#000;
+  border-bottom: 10px solid #000;
+  border-right: 10px solid #000;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  margin-right: 10px;
+}
+
+span.question-text {
+  font-weight: bold;
+}
+
+div.answer {
+  display: none;
+  padding: 10px;
+  font-weight: 900;
+  color: rgba(128, 128, 128, 0.492);
+}
+/* Faqs Section Ended */
 
 /* ----------------------------------------------------- PCI FAQS PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- PCI SECURITY PAGE STARTED------------------------------------------------------------ */
 
-
-body.pcisecuritybody{
-    background: whitesmoke;
-    background-color: whitesmoke;
+body.pcisecuritybody {
+  background: whitesmoke;
+  background-color: whitesmoke;
 }
 
-div.pcisecurity-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center center;
-    flex-shrink: initial;
-    height: 40vh;
-    margin-bottom: 20px;
+div.pcisecurity-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+  margin-bottom: 20px;
 }
-div.pcisecurity-hero h1{
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke, -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-    text-align: center;
+div.pcisecurity-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
+  text-align: center;
 }
 
-div.pcis{
-    margin: 0 8px 0 8px;
+div.pcis {
+  margin: 0 8px 0 8px;
 }
 
 /* ----------------------------------------------------- PCI SECURITY PAGE ENDED------------------------------------------------------------ */
 
-
 /* ----------------------------------------------------- PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
 
-
-body.pcicompliancebody{
-    background: whitesmoke;
-    background-color: whitesmoke;
+body.pcicompliancebody {
+  background: whitesmoke;
+  background-color: whitesmoke;
 }
 
-div.pcicompliance-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center center;
-    flex-shrink: initial;
-    height: 40vh;
-    /* filter: brightness(0.5); */
-   /*  margin-top: -40px; */
-    margin-bottom: 20px;
+div.pcicompliance-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+  /* filter: brightness(0.5); */
+  /*  margin-top: -40px; */
+  margin-bottom: 20px;
 }
 /* div.pcicompliance-hero h1{
     font-size: 4rem;
@@ -362,141 +389,139 @@ div.pcicompliance-hero{
     margin-bottom: 0px;
 } */
 
-div.pbcp{
-    margin: 0 8px 0 8px;
+div.pbcp {
+  margin: 0 8px 0 8px;
 }
-
 
 /* ----------------------------------------------------- PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
 
-
-
-
-
-
-
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
 
-body.applynowbody{
-    background: whitesmoke;
-    background-color: whitesmoke;
+body.applynowbody {
+  background: whitesmoke;
+  background-color: whitesmoke;
 }
 
-
-div.applynow-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center center;
-    flex-shrink: initial;
-    height: 40vh;
-
+div.applynow-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
 }
 
-div.applynow-hero h1{
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke, -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-    text-align: center;
+div.applynow-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
+  text-align: center;
 }
 
-
-div.applynowform{
-    margin: 0 30px 10px 30px;
-    background-color: rgba(127, 255, 212, 0.349);
+div.applynowform {
+  margin: 0 30px 10px 30px;
+  background-color: rgba(127, 255, 212, 0.349);
+  border: 1px solid rgb(6, 250, 14);
 }
 
-div.applynowform:hover{
-    box-shadow: 0 0 5px rgba(127, 255, 212, 0.349);
-
+div.applynowform:hover {
+  box-shadow: 0 0 15px rgba(127, 255, 212, 0.87);
 }
 
-div.applynowsubmit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+div.applynowsubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-input.apn,select.apn{
-    background-color: transparent;
+input.apn,
+select.apn {
+  background-color: transparent;
+}
+div.callcard {
+  text-align: center;
+  margin: 0 30px 10px 30px;
+  padding: 10px;
+  /* background-color: rgba(128, 128, 128, 0.499); */
+  border-radius: 10px;
+}
+
+div.callcard:hover {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.806);
 }
 /* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
 
-
-
-
-
-
-
 /* -----------------------------------------------------CONTACT US PAGE STARTED------------------------------------------------------------ */
-body.contactusbody{
-    background: white;
-    background-color: white;
+body.contactusbody {
+  background: white;
+  background-color: white;
 }
-div.contactus-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center center;
-    flex-shrink: initial;
-    height: 40vh;
-    margin-bottom: 20px;
+div.contactus-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+  margin-bottom: 20px;
 }
-div.contactus-hero h1{
-    font-size: 4rem;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite, -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
-    text-align: center;
+div.contactus-hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
+    -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
+  text-align: center;
 }
 
-div.contactformsection{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-shrink: initial;
-    flex-wrap: wrap;
-    background-size: cover;
+div.contactformsection {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-shrink: initial;
+  flex-wrap: wrap;
+  background-size: cover;
 }
-div.cdetails{
-    align-items: center;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.668);
-    padding: 50px 40px 40px 40px;
-    /* border-radius: 50%; */
+div.cdetails {
+  align-items: center;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.668);
+  padding: 50px 40px 40px 40px;
+  /* border-radius: 50%; */
 }
 @media (max-width: 1400px) {
-    div.cdetails {
-     width: 100%;
-    }
+  div.cdetails {
+    width: 100%;
+  }
 }
-div.form{
+div.form {
   font-weight: bold;
   padding: 30px;
 }
-div.form:hover{
-    background-color: rgba(245, 245, 245, 0.668);
-    transition: 1s;
-
+div.form:hover {
+  background-color: rgba(245, 245, 245, 0.668);
+  transition: 1s;
 }
 
-input.cs,textarea.cs{
-    background-color: transparent;
-    border-color: white;
+input.cs,
+textarea.cs {
+  background-color: transparent;
+  border-color: white;
 }
-div.csbtn{
-   display: flex;
-   justify-content: center;
+div.csbtn {
+  display: flex;
+  justify-content: center;
 }
-button.Submit{
-    width: 100%;
-    border-color: rgba(0, 255, 255, 0.468);
-    font-weight: 700;
+button.Submit {
+  width: 100%;
+  border-color: rgba(0, 255, 255, 0.468);
+  font-weight: 700;
 }
-button.Submit:hover{
-    background-color: rgba(0, 255, 255, 0.468);
+button.Submit:hover {
+  background-color: rgba(0, 255, 255, 0.468);
 }
 /* -----------------------------------------------------CONTACT US PAGE ENDED------------------------------------------------------------ */
 
