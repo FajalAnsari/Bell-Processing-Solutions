@@ -1,18 +1,16 @@
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0px; 
   font-family: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
 }
-body {
-  background-color: #0093e9;
-  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-}
+
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
 nav.navbar {
   background-color: rgba(255, 255, 255, 0.458);
+  color: #000;
 }
 ul {
   margin: 0 40px 0 0;
@@ -26,6 +24,8 @@ li.nav-item:hover {
   margin: 2px 10px 2px 10px;
   border-radius: 5px;
 }
+
+
 /* -------------------------------------------NAVBAR STYLING ENDED----------------------------------------------------*/
 /* -------------------------------------------SLIDING ANIMATION STYING STARTED----------------------------------------------------*/
 /*  Customize the carousel height and width */
@@ -37,7 +37,6 @@ li.nav-item:hover {
 
 /*  Center the images within the carousel */
 #carousel .carousel-inner img {
-  height: 791px;
   display: block;
   margin: 0 auto;
 }
@@ -51,16 +50,36 @@ li.nav-item:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media(max-width: 450px){
+    .centered{
+      font-size: 1rem;
+    }
+}
 /* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
 
 /* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
 /* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
-/* OUR SERVICES PART STARTED */
+
+
+
+/*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
 h1.ourservices {
   text-align: center;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 900;
-  color: white;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(255, 255, 255),
+  -1px 1px 1px rgb(255, 255, 255), 1px 1px 1px rgb(255, 251, 251);
+}
+
+@media(max-width: 450px){
+  h1.ourservices {
+
+    font-size: 2rem;
+
+  }
+  
 }
 
 div.pands {
@@ -69,28 +88,99 @@ div.pands {
   justify-content: space-evenly;
 }
 div.servicecards {
-  margin: 0 0px 10px 0px;
-  border-color: rgb(88, 160, 232);
-  border-width: 5px;
+/*   border-color: rgb(88, 160, 232);
+ */  /* border-width: 5px; */
   margin: 10px;
-  background-color: rgba(255, 255, 255, 0.576);
+  background-color: #fdb71351;
   /*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  */
+
+ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Classic box shadow */
 }
-div.servicecards:hover {
-  box-shadow: 0 4px 8px 0 rgba(10, 251, 255, 0.714),
-    0 6px 20px 0 rgb(17, 28, 252);
-}
+
+
+/* div.servicecards:hover {
+  box-shadow:black 2px;
+} */
 img.serviceimg {
   border-color: black;
   border-width: 5px;
 }
 
+
+
+
 a.servicebtn {
   border-color: black;
   border-width: 2px;
 }
-/* OUR SERVICES PART ENDED */
+
+a.servicebtn:hover{
+  background-color: #fdb71393;
+  border-color: black;
+}
+
+div.viewmorebtn{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+button.view-more{
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Classic box shadow */
+  padding: 20px 40px 20px 40px;
+}
+/*---------------------------------------------------------------OUR SERVICES PART ENDED ----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------TESTIMONIALS PART STARTED ----------------------------------------------------------------------*/
+h1.testimonials {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(255, 255, 255),
+  -1px 1px 1px rgb(255, 255, 255), 1px 1px 1px rgb(255, 251, 251);
+}
+
+@media(max-width: 450px){
+  h1.testimonials {
+
+    font-size: 2rem;
+
+  }  
+}
+
+.bubble {
+
+  --r: 25px; /* the radius */
+  --t: 30px; /* the size of the tail */
+  
+  max-width: 500px;
+  padding: calc(2*var(--r)/3);
+  -webkit-mask: 
+    radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+      var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+      calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+    radial-gradient(50% 50%,#000 98%,#0000 101%) 
+      0 0/var(--r) var(--r) space padding-box;
+  background:  #8E38A1 border-box;
+  color: whitesmoke;
+  margin-bottom: 10px;
+
+
+}
+.left {
+
+  --_d: 100%;
+  border-right: var(--t) solid #0000;
+  margin-left: var(--t);
+  place-self: end;
+}
+
+
+/*--------------------------------------------------------TESTIMONIALS PART ENDED ----------------------------------------------------------------------*/
 
 /* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE STARTED------------------------------------------------------------ */
 
@@ -136,6 +226,11 @@ div.ecommerce_mailorde-hero h1 {
   text-align: center;
 }
 
+@media (max-width: 450px) {
+  div.ecommerce_mailorde-hero h1 {
+    font-size: 2rem;
+  }
+}
 
 
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
@@ -281,10 +376,11 @@ div.fraudblaster-hero h1 {
   font-size: 4rem;
   color: whitesmoke;
   font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0),
     -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
   text-align: center;
 }
+
 
 /* -----------------------------------------------------FRAUD BLASTER  PAGE ENDED------------------------------------------------------------ */
 
@@ -318,6 +414,9 @@ div.freeanalysis-hero h1 {
 
 div.freeanalysis {
   margin: 0 8px 0 8px;
+  background-color: #1a1a1aa3;;
+  color: white;
+  padding: 15px;
 }
 
 /* -----------------------------------------------------FREE ANALYSIS PAGE ENDED------------------------------------------------------------ */
@@ -504,7 +603,10 @@ div.pcisecurity-hero h1 {
 }
 
 div.pcis {
-  margin: 0 8px 0 8px;
+  margin: 0 0px 0 0px;
+  background-color: #4683b455;
+  border-radius: 0px;
+  padding: 5px;
 }
 
 /* ----------------------------------------------------- PCI SECURITY PAGE ENDED------------------------------------------------------------ */
@@ -528,20 +630,18 @@ div.pcicompliance-hero {
   /*  margin-top: -40px; */
   margin-bottom: 20px;
 }
-/* div.pcicompliance-hero h1{
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke, -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-    text-align: center;
-    margin-bottom: 0px;
-} */
 
 div.pbcp {
   margin: 0 8px 0 8px;
+  background-color: rgba(246, 99, 126, 0.252);
+  padding: 5px;
+  border-radius: 5px;
+}
+div.pbcp h1 {
+   text-align: center;
 }
 
-/* ----------------------------------------------------- PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
+/* ----------------------------------------------------- PCI COMPLIANCE PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
 
