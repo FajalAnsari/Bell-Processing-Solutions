@@ -235,6 +235,35 @@ div.ecommerce_mailorde-hero h1 {
 
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
+/* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
+div.merchantcash-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  flex-shrink: initial;
+  height: 40vh;
+}
+
+div.merchantcash-hero h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
+    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
+
 /* -----------------------------------------------------Check Guarantee PAGE STARTED------------------------------------------------------------ */
 div.checkguarantee-hero {
   display: flex;
