@@ -22,8 +22,6 @@ $(document).ready(function () {
 
 
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     var myCarousel = new bootstrap.Carousel(document.getElementById('carousel'), 
     {
@@ -299,3 +297,47 @@ function checkInputs() {
       input.classList.add('is-valid');
     }    
 }
+
+
+
+var isFormCompleted = false;
+
+  // Function to show the next part of the form
+  function showNextPart() {
+    $('#part1').hide();
+    $('#part2').show();
+    // Hide the "NEXT" button for the first part and show the "NEXT" button for the second part
+    $('.next-button-part1').hide();
+    $('.next-button-part2').show();
+  }
+
+  // Function to show the success message and hide the form
+  function showSuccessMessage() {
+    $('#part2').hide();
+    $('#successMessage').show();
+    // Hide both "NEXT" buttons and mark the form as completed
+    $('.next-button-part1, .next-button-part2').hide();
+    isFormCompleted = true;
+  }
+
+  // Click event handler for the "NEXT" button for the first part
+  $('.applynowsubmit').on('click', '.next-button-part1', function (e) {
+    e.preventDefault();
+    // If the first part is visible, show the second part
+    showNextPart();
+  });
+
+  // Click event handler for the "NEXT" button for the second part
+  $('.applynowsubmit').on('click', '.next-button-part2', function (e) {
+    e.preventDefault();
+    // If the second part is visible, show the success message
+    showSuccessMessage();
+  });
+
+  // Add a check when the page loads to hide the "NEXT" buttons if the form is already completed
+  $(document).ready(function() {
+    if (isFormCompleted) {
+      $('.next-button-part1, .next-button-part2').hide();
+    }
+  });
+
