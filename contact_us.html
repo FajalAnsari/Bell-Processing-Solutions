@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BELL PROCESSING SOLUTIONS</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("#navbar").load("navbar.html");
+        jQuery("#footer").load("footer.html");
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/91b027ae4c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="contactusbody">
+    <main>
+      <header id="navbar"></header>
+      <div
+        class="contactus-hero img-fluid"
+        style="
+          background-image: url(IMAGES/contact-us-customer-service-or-call-center-agent-2022-12-10-02-02-31-utc.jpg);
+        "
+      >
+        <h1>CONTACT US</h1>
+      </div>
+      <div class="contactformsection" style="background-image: url(IMAGES/retro-telephone-2022-06-23-14-07-15-utc.jpg);" >
+        <div class="cdetails">
+          <h3 class="details" style="font-size: 3rem; font-weight: bolder; ">How to Find Us</h3>
+          <p class="details" style="font-weight: bold;">
+            If you have any questions, just <i> fill in the contact form</i>,<br />
+            and we will answer you shortly. If you are living nearby,<br />
+            come visit us at one of our comfortable offices.
+          </p>
+          <h4 style="font-size: 2rem; font-weight: bolder;" >
+            Headquarters
+          </h4>
+          <p style="font-weight: bold;">19355 TURNBERRY WAY SUITE 27D
+            AVENTURA ,<br> FLORIDA 33180 <br>
+            Telephone: 1.877.911.BELL <br>
+            212.624.4641
+          </p>
+          
+        </div><!-- style="background-image: url(IMAGES/retro-telephone-2022-06-23-14-07-15-utc.jpg); -->
+        <div class="form"  >
+          <form class="row g-3" method="get" id="form" novalidate>
+            <!-- <h1 style="font-weight: bold;">GET IN <i>TOUCH</i></h1> -->
+            <div class="col-md-6 input-group-md">
+              <label for="name" class="form-label">Full Name *</label>
+              <input
+                type="text"
+                class="form-control cs"
+                id="name"
+                name="name"
+                placeholder="Enter Your Full Name"
+              />
+              <div id="nameError" class="error-message"></div>
+            </div>
+            <div class="col-md-6 input-group-md">
+              <label for="email" class="form-label">Email Address *</label>
+              <input
+                type="email"
+                class="form-control cs"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email "
+              />
+              <div id="emailError" class="error-message"></div>
+            </div>
+            <div class="input-group-md">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control cs"
+                id="exampleFormControlTextarea1"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="col-12 csbtn" >
+              <button type="submit" class="btn Submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="JAVASCRIPT/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
