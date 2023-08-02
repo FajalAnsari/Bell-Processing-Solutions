@@ -55,20 +55,47 @@ li.nav-item:hover {
     font-size: 1.9rem;
   }
 }
-/* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
-
-/* -------------------------------------------------Typing Effect in Slider----------------------------------------------*/
 /* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
+
+
+
+
+/* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.typed {
+  animation: fadeInText 2s ease-in-out forwards;
+
+}
+
+/* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
+
+
+
+
 
 
 /* -----------------------------------------------------WHAT DO WE DO PART STARTED ---------------------------------------------------------------- */
 
 .header-content {
   padding: 40px;
-  background-color: #007bff; 
+  background-color: #007bff;
   color: #fff;
 }
 
+h2.text-center {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
 
 @media (max-width: 576px) {
   h2 {
@@ -83,21 +110,11 @@ li.nav-item:hover {
   border-radius: 10px;
 }
 
-
 .about-description p {
   margin-bottom: 1rem;
 }
 
-
-
-
-
 /* -----------------------------------------------------WHAT DO WE DO PART ENDED----------------------------------------------------- */
-
-
-
-
-
 
 /*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
 h1.ourservices {
@@ -105,21 +122,25 @@ h1.ourservices {
   font-size: 3.5rem;
   font-weight: bold;
   color: transparent;
-  background-clip: text; 
-  background-image: linear-gradient(90deg, #33cc99, #66cc99, #99cc99); 
-  -webkit-background-clip: text; 
+  background-clip: text;
+  background-image: linear-gradient(90deg, #33cc99, #66cc99, #99cc99);
+  -webkit-background-clip: text;
   text-transform: uppercase;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
   animation: gradientAnimation 5s linear infinite;
 }
 
-
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
 
 @media (max-width: 450px) {
   h1.ourservices {
@@ -174,10 +195,7 @@ button.view-more {
 }
 /*---------------------------------------------------------------OUR SERVICES PART ENDED ----------------------------------------------------------------------*/
 
-
-
 /*---------------------------------------------------------------OUR CLIENTS PART STARTED ----------------------------------------------------------------------*/
-
 
 /* Custom styles for the "Our Clients" section */
 #our-clients {
@@ -211,40 +229,37 @@ h2.text-center {
   transform: translateY(-5px);
 }
 
-
-
-
-
-
-
 /*---------------------------------------------------------------OUR CLIENTS PART ENDED ----------------------------------------------------------------------*/
-
-
-
-
-
-
 
 /*---------------------------------------------------------------TESTIMONIALS PART STARTED ----------------------------------------------------------------------*/
 h1.testimonials {
   text-align: center;
   font-size: 3.5rem;
   font-weight: bold;
-  color: transparent; /* Make the text transparent to apply the gradient background */
-  background-clip: text; /* Apply the background to the text only */
-  background-image: linear-gradient(90deg, #33cccc, #66cc99); /* Create a gradient background with shades of teal and green */
-  -webkit-background-clip: text; /* For compatibility with some browsers */
+  color: transparent; 
+  background-clip: text; 
+  background-image: linear-gradient(
+    90deg,
+    #33cccc,
+    #66cc99
+  ); 
+  -webkit-background-clip: text; 
   text-transform: uppercase;
-  letter-spacing: 2px; /* Add some letter spacing to the heading */
-  animation: gradientAnimation 5s linear infinite; /* Add a subtle animation to the gradient */
+  letter-spacing: 2px; 
+  animation: gradientAnimation 5s linear infinite; 
 }
 
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
 
 @media (max-width: 450px) {
   h1.testimonials {
@@ -271,7 +286,7 @@ h1.testimonials {
   transition: transform 0.3s ease;
 }
 .bubble:hover {
-  /* Move the card upwards by 10px */
+
   transform: translate(0, -10px);
 }
 .left {
@@ -360,6 +375,41 @@ div.merchantcash-hero h1 {
     -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
   text-align: center;
 }
+
+div.merchantform {
+  background-size: cover;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+}
+
+
+  #part1,
+  #part2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #part1 .input-group-md,
+  #part2 .input-group-md {
+    max-width: 300px; 
+  }
+
+  #part1 .input-group-md,
+  #part2 .input-group-md {
+    margin: 5px;
+  }
+
+  #part1 .form-control:focus,
+  #part2 .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.532);
+  }
+
+
+
 
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
@@ -700,21 +750,19 @@ div.faq {
   color: white;
 }
 div.q-and-a {
-  /*     display: flex; */
-  /*     flex-direction: column;
-    justify-content: center; */
+
   margin-top: 20px;
 }
 
 div.question {
   display: flex;
-  /*  justify-content: center; */
+
   margin-bottom: 10px;
   cursor: pointer;
   padding: 20px;
 
   background-color: rgba(128, 128, 128, 0.492);
-  /*     border-bottom: none; */
+
 }
 
 span.arrow {
@@ -857,28 +905,23 @@ div.applynowform {
   border-radius: 10px;
   background-size: cover;
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.806);
-
 }
-
 
 div.applynowsubmit {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-button.applynowsubmit:hover{
-   background-color: #ffffff6b;
+button.applynowsubmit:hover {
+  background-color: #ffffff6b;
 }
-
 
 input.apn,
 select.apn {
   color: whitesmoke;
   background-color: transparent;
 }
-
 
 div.callcard {
   text-align: center;
@@ -891,27 +934,28 @@ div.callcard {
 }
 
 div.callcard:hover {
-  animation: shake 0.3s ease ;
+  animation: shake 0.3s ease;
 }
 
 @keyframes shake {
-  0%, 100% { transform: translate(0, 0); }
-  10%, 30%, 50%, 70%, 90% { transform: translate(-1px, -1px); }
-  20%, 40%, 60%, 80% { transform: translate(1px, 1px); }
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-1px, -1px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(1px, 1px);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
 

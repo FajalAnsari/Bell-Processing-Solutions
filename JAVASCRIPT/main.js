@@ -1,4 +1,4 @@
-
+//////////////////////////////////////NAVBAR DROP DOWN LOGIC/////////////////////////////////////////////////////////
 
 $(document).ready(function () {
   $(".dropdown").on("show.bs.dropdown", function () {
@@ -15,12 +15,7 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
+///////////////////////////////////////////////CAROUSEL SLIDING LOGIC//////////////////////////////////////////////////////
 
 document.addEventListener('DOMContentLoaded', function() {
     var myCarousel = new bootstrap.Carousel(document.getElementById('carousel'), 
@@ -30,22 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-//Typing animation for the sliders text
-var i = 0;
-var txt = 'A Leader in the Credit Card Processing Industry ';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementsByClassName("typed").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-//Typing animation for the sliders text
 
 
-/* View more and view less button functionality for cards display*/
+
+///////////////////////////////// View more and view less button functionality for cards display*//////////////////////////////
 function toggleCards() {
   var extraCards = document.getElementsByClassName('extra');
   var viewMoreButton = document.getElementById('view-more');
@@ -60,7 +43,7 @@ function toggleCards() {
       viewMoreButton.innerText = 'View More ';
   }
 }
-/* View more and view less button functionality for cards display ENDED*/
+///////////////////////////////// View more and view less button functionality for cards display ENDED*////////////////////////////
 
 
 
@@ -81,7 +64,7 @@ function toggleAnswer(questionId) {
 /* Faqs Section functionality Ended */ 
 
 
-
+//////////////////////////////APPLY NOW FORM AND CONTACT US FORM VALIDATIONS LOGIC //////////////////////////////////////////////////////
 
 const fullName = document.getElementById('name');
 const fullNameError = document.getElementById('nameError');
@@ -299,45 +282,73 @@ function checkInputs() {
 }
 
 
+/////////////////////////////////////MERCHANT PAGE FORM VALIDATION LOGIC//////////////////////////////////////////
 
-var isFormCompleted = false;
 
-  // Function to show the next part of the form
-  function showNextPart() {
-    $('#part1').hide();
-    $('#part2').show();
-    // Hide the "NEXT" button for the first part and show the "NEXT" button for the second part
-    $('.next-button-part1').hide();
-    $('.next-button-part2').show();
+let currentStep = 1;
+
+function showStep(stepNumber) {
+  document.getElementById(`part${stepNumber}`).style.display = "flex";
+  document.getElementById("successMessage").style.display = "none";
+}
+
+function hideStep(stepNumber) {
+  document.getElementById(`part${stepNumber}`).style.display = "none";
+}
+
+function nextStep() {
+  const form = document.getElementById("form");
+  let isValid = true;
+
+  if (currentStep === 1) {
+    isValid = validateStep1();
+  } else if (currentStep === 2) {
+    isValid = validateStep2();
   }
 
-  // Function to show the success message and hide the form
-  function showSuccessMessage() {
-    $('#part2').hide();
-    $('#successMessage').show();
-    // Hide both "NEXT" buttons and mark the form as completed
-    $('.next-button-part1, .next-button-part2').hide();
-    isFormCompleted = true;
-  }
+  if (isValid) {
+    form.classList.remove("was-validated");
+    hideStep(currentStep);
+    currentStep++;
 
-  // Click event handler for the "NEXT" button for the first part
-  $('.applynowsubmit').on('click', '.next-button-part1', function (e) {
-    e.preventDefault();
-    // If the first part is visible, show the second part
-    showNextPart();
-  });
-
-  // Click event handler for the "NEXT" button for the second part
-  $('.applynowsubmit').on('click', '.next-button-part2', function (e) {
-    e.preventDefault();
-    // If the second part is visible, show the success message
-    showSuccessMessage();
-  });
-
-  // Add a check when the page loads to hide the "NEXT" buttons if the form is already completed
-  $(document).ready(function() {
-    if (isFormCompleted) {
-      $('.next-button-part1, .next-button-part2').hide();
+    if (currentStep === 3) {
+      // Show success message after completing all steps
+      document.getElementById("successMessage").style.display = "block";
+      document.querySelector('button[onclick="nextStep()"]').style.display = "none"; // Hide the "NEXT" button
+    } else {
+      showStep(currentStep);
     }
-  });
+  } else {
+    form.classList.add("was-validated");
+  }
+}
+
+function validateStep1() {
+  // Validation logic for Step 1 form fields
+  const fundsRequested = document.getElementById("fundsRequested").value;
+  const totalMonthlyRevenue = document.getElementById("totalMonthlyRevenue").value;
+  const monthlyProcessingVolume = document.getElementById("monthlyProcessingVolume").value;
+
+  if (!fundsRequested || !totalMonthlyRevenue || !monthlyProcessingVolume) {
+    return false;
+  }
+
+  return true;
+}
+
+function validateStep2() {
+  // Validation logic for Step 2 form fields
+  const fullName = document.getElementById("fullName").value;
+  const companyName = document.getElementById("companyName").value;
+  const email = document.getElementById("email").value;
+  const phoneNumber = document.getElementById("phoneNumber").value;
+  const state = document.getElementById("state").value;
+
+  if (!fullName || !companyName || !email || !phoneNumber || !state) {
+    return false;
+  }
+
+  return true;
+}
+
 
