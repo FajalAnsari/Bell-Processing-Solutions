@@ -312,7 +312,6 @@ function nextStep() {
     currentStep++;
 
     if (currentStep === 3) {
-      // Show success message after completing all steps
       document.getElementById("successMessage").style.display = "block";
       document.querySelector('button[onclick="nextStep()"]').style.display = "none"; // Hide the "NEXT" button
     } else {
