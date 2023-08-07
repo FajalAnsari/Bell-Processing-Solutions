@@ -7,6 +7,20 @@ a {
   text-decoration: none;
 }
 
+/* -------------------------------------------Comman CSS of text---------------------------------------------- */
+.fw-600{
+  font-weight: 600;
+}
+.fw-400{
+  font-weight: 400;
+}
+
+
+/* -------------------------------------------Comman CSS of text End---------------------------------------------- */
+.text-justify{
+  text-align: justify !important;
+  text-justify: inter-word;
+}
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
 nav.navbar {
   background-color: rgba(255, 255, 255, 0.458);
@@ -40,20 +54,9 @@ li.nav-item:hover {
   margin: 0 auto;
 }
 /* Images Text */
-.centered {
+.caros-text-box {
   color: whitesmoke;
-  font-size: larger;
-  font-weight: bolder;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@media (max-width: 500px) {
-  .centered {
-    font-size: 1.9rem;
-  }
 }
 /* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
 
@@ -69,8 +72,6 @@ li.nav-item:hover {
     opacity: 1;
   }
 }
-
-
 .typed {
   animation: fadeInText 2s ease-in-out forwards;
 
@@ -85,34 +86,6 @@ li.nav-item:hover {
 
 /* -----------------------------------------------------WHAT DO WE DO PART STARTED ---------------------------------------------------------------- */
 
-.header-content {
-  padding: 40px;
-  background-color: #007bff;
-  color: #fff;
-}
-
-h2.text-center {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 576px) {
-  h2 {
-    text-align: center;
-  }
-}
-
-.about-description {
-  font-size: 1rem;
-  padding: 20px;
-  background-color: rgba(255, 166, 0, 0.625);
-  border-radius: 10px;
-}
-
-.about-description p {
-  margin-bottom: 1rem;
-}
 
 /* -----------------------------------------------------WHAT DO WE DO PART ENDED----------------------------------------------------- */
 
