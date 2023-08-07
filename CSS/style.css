@@ -23,7 +23,16 @@ a {
 .bg-color-light{
   background-color: #f7f7f7;
 }
+.Visit-btn-color{
+  background-color: #b42025 !important;
+  color: #000 !important;
+  
+}
+.Visit-btn-color:hover{
+  background-color: #000 !important;
+  color: #b42025 !important;
 
+}
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 .text-justify{
   text-align: justify !important;
