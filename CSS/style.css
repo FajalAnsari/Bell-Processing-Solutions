@@ -14,7 +14,9 @@ a {
 .fw-400{
   font-weight: 400;
 }
-
+.h-15rem{
+  height: 15rem;
+}
 
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 .text-justify{
@@ -80,91 +82,18 @@ li.nav-item:hover {
 /* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
 
 
-
-
-
-
-/* -----------------------------------------------------WHAT DO WE DO PART STARTED ---------------------------------------------------------------- */
-
-
-/* -----------------------------------------------------WHAT DO WE DO PART ENDED----------------------------------------------------- */
-
 /*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
-h1.ourservices {
-  text-align: center;
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(90deg, #33cc99, #66cc99, #99cc99);
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  animation: gradientAnimation 5s linear infinite;
+div.ourservices{
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0 10px 10px;
+  margin: 0;
 }
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.cards{
+  transition: transform 0.2s ease-in-out;
 }
-
-@media (max-width: 450px) {
-  h1.ourservices {
-    font-size: 2rem;
-  }
-}
-
-div.pands {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-div.servicecards {
-  /*   border-color: rgb(88, 160, 232);
- */ /* border-width: 5px; */
-  margin: 10px;
-  background-color: #fdb7138c;
-  /*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- */
-
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Classic box shadow */
-}
-
-/* div.servicecards:hover {
-  box-shadow:black 2px;
-} */
-img.serviceimg {
-  border-color: black;
-  border-width: 5px;
-}
-
-a.servicebtn {
-  border-color: black;
-  border-width: 2px;
-}
-
-a.servicebtn:hover {
-  background-color: #fdb71393;
-  border-color: black;
-}
-
-div.viewmorebtn {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 0 0;
-}
-
-button.view-more {
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Classic box shadow */
-  padding: 20px 40px 20px 40px;
+.cards:hover{
+  transform: translate(-5px,-5px);
 }
 /*---------------------------------------------------------------OUR SERVICES PART ENDED ----------------------------------------------------------------------*/
 

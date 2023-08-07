@@ -29,20 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 ///////////////////////////////// View more and view less button functionality for cards display*//////////////////////////////
-function toggleCards() {
-  var extraCards = document.getElementsByClassName('extra');
-  var viewMoreButton = document.getElementById('view-more');
-  
-  for (var i = 0; i < extraCards.length; i++) {
-      extraCards[i].classList.toggle('d-none');
-  }
-  
-  if (viewMoreButton.innerText === 'View More') {
-      viewMoreButton.innerText = 'View Less ';
-  } else {
-      viewMoreButton.innerText = 'View More ';
-  }
-}
+
 ///////////////////////////////// View more and view less button functionality for cards display ENDED*////////////////////////////
 
 
