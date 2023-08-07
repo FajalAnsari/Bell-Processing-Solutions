@@ -156,28 +156,9 @@ h2.text-center {
 /* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE STARTED------------------------------------------------------------ */
 
 div.ccanddc-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-size: cover;
   background-position: center center;
-  flex-shrink: initial;
   height: 40vh;
-}
-
-div.ccanddc-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.ccanddc-hero h1 {
-    font-size: 2rem;
-  }
 }
 
 /* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE ENDED------------------------------------------------------------ */
@@ -212,22 +193,9 @@ div.ecommerce_mailorde-hero h1 {
 
 /* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
 div.merchantcash-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-size: cover;
   background-position: center center;
-  flex-shrink: initial;
   height: 40vh;
-}
-
-div.merchantcash-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
 }
 
 div.merchantform {
@@ -261,10 +229,6 @@ div.merchantform {
   #part2 .form-control:focus {
     background-color: rgba(255, 255, 255, 0.532);
   }
-
-
-
-
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------Check Guarantee PAGE STARTED------------------------------------------------------------ */
