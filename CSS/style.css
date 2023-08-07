@@ -42,7 +42,7 @@ li.nav-item:hover {
 /* Images Text */
 .centered {
   color: whitesmoke;
-  font-size: 3rem;
+  font-size: larger;
   font-weight: bolder;
   position: absolute;
   top: 50%;
