@@ -720,13 +720,10 @@ select option{
   background-color: #333;
 }
 
-div.applynowsubmit {
-
-}
 
 button.applynowsubmit:hover{
-  background-color: #b42025 !important;
-  color: whitesmoke !important;
+  color: #b42025 !important;
+  background-color: whitesmoke !important;
 }
 
 input.apn,
@@ -734,39 +731,12 @@ select.apn {
   color: whitesmoke;
   background-color: transparent;
 }
-
-div.callcard {
-  text-align: center;
-  margin: 0 30px 10px 30px;
-  padding: 10px;
-  border-radius: 10px;
-
-  position: relative;
-  transition: transform 0.1s ease;
+.callcard {
+  transition: transform 0.2s ease-in-out;
 }
 
-div.callcard:hover {
-  animation: shake 0.3s ease;
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translate(-1px, -1px);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate(1px, 1px);
-  }
+.callcard:hover {
+  transform: translate(-10px, -10px);
 }
 
 /* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
