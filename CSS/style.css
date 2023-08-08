@@ -6,7 +6,10 @@
 a {
   text-decoration: none;
 }
-
+body{
+  background: white;
+  background-color: white;
+}
 /* -------------------------------------------Comman CSS of text---------------------------------------------- */
 .fw-600{
   font-weight: 600;
@@ -39,11 +42,28 @@ a {
 .z-index-10{
   z-index: 10 !important;
 }
-/* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 .text-justify{
   text-align: justify !important;
   text-justify: inter-word;
 }
+/* -------------------------------------------Comman CSS of text End---------------------------------------------- */
+
+/* -------------------------------------------------Images After navbar in Each page---------------------------------------- */
+.img-after-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+}
+
+/* -------------------------------------------------Images After navbar in Each page end---------------------------------------- */
+.img-size{
+  max-width: 25%;
+  max-height: 25%;
+}
+
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
 nav.navbar {
   background-color: rgba(255, 255, 255, 0.458);
@@ -490,22 +510,7 @@ div.pcicompliance-hero h1 {
 
 /* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
 /* ----------------------------------------------------- ABOUT PCI PAGE STARTED------------------------------------------------------------ */
-body.aboutpci {
-  background: whitesmoke;
-  background-color: whitesmoke;
-}
-div.aboutpcibody {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: 0 10px 10px 10px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: rgba(244, 255, 127, 0.278);
-}
+
 div.aboutpci-hero {
   display: flex;
   justify-content: center;
@@ -513,7 +518,6 @@ div.aboutpci-hero {
   background-size: cover;
   flex-shrink: initial;
   height: 40vh;
-  /* filter: brightness(0.5); */
   margin-bottom: 20px;
 }
 div.aboutpci-hero h1 {
@@ -702,8 +706,9 @@ body.applynowbody {
 }
 
 div.applynow-hero {
-  background-size: 100%;
+  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
   height: 40vh;
 }
 
