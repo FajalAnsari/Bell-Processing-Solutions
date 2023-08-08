@@ -33,6 +33,9 @@ a {
   color: #b42025 !important;
 
 }
+.rounded-5{
+  border-radius: 5rem;
+}
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 .text-justify{
   text-align: justify !important;
@@ -713,24 +716,17 @@ div.applynow-hero h1 {
     -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
   text-align: center;
 }
-
-div.applynowform {
-  margin: 0 30px 10px 30px;
-  background-color: rgba(127, 255, 212, 0.349);
-  padding: 10px 20px 10px 20px;
-  border-radius: 10px;
-  background-size: cover;
-  box-shadow: 0 0 5px rgba(128, 128, 128, 0.806);
+select option{
+  background-color: #333;
 }
 
 div.applynowsubmit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
-button.applynowsubmit:hover {
-  background-color: #ffffff6b;
+button.applynowsubmit:hover{
+  background-color: #b42025 !important;
+  color: whitesmoke !important;
 }
 
 input.apn,
