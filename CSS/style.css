@@ -101,14 +101,12 @@ li.nav-item:hover {
 div.ourservices{
   background-size: cover;
   background-position: center;
-  padding: 10px 0 10px 10px;
-  margin: 0;
 }
 .cards{
   transition: transform 0.2s ease-in-out;
 }
 .cards:hover{
-  transform: translate(-5px,-5px);
+  transform: translate(-10px,-10px);
 }
 /*---------------------------------------------------------------OUR SERVICES PART ENDED ----------------------------------------------------------------------*/
 
