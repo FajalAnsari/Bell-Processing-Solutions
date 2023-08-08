@@ -256,30 +256,7 @@ div.merchantform {
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------Check Guarantee PAGE STARTED------------------------------------------------------------ */
-div.checkguarantee-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
 
-div.checkguarantee-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.checkguarantee-hero h1 {
-    font-size: 2rem;
-  }
-}
 
 /* -----------------------------------------------------Check Guarantee PAGE ENDED------------------------------------------------------------ */
 
