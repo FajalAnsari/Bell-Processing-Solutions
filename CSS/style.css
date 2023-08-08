@@ -183,30 +183,6 @@ h2.text-center {
 /* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
-div.ecommerce_mailorde-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.ecommerce_mailorde-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.ecommerce_mailorde-hero h1 {
-    font-size: 2rem;
-  }
-}
 
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
@@ -371,31 +347,6 @@ div.prepaid-hero h1 {
 /* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------FRAUD BLASTER  PAGE STARTED------------------------------------------------------------ */
-
-div.fraudblaster-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.fraudblaster-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0),
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.fraudblaster-hero h1 {
-    font-size: 2rem;
-  }
-}
 
 /* -----------------------------------------------------FRAUD BLASTER  PAGE ENDED------------------------------------------------------------ */
 
@@ -671,37 +622,13 @@ div.pbcp h1 {
 /* ----------------------------------------------------- PCI COMPLIANCE PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
-
-body.applynowbody {
-  background: whitesmoke;
-  background-color: whitesmoke;
-}
-
-div.applynow-hero {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 40vh;
-}
-
-div.applynow-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-  text-align: center;
-}
 select option{
   background-color: #333;
 }
-
-
 button.applynowsubmit:hover{
   color: #b42025 !important;
   background-color: whitesmoke !important;
 }
-
 input.apn,
 select.apn {
   color: whitesmoke;
@@ -710,11 +637,9 @@ select.apn {
 .callcard {
   transition: transform 0.2s ease-in-out;
 }
-
 .callcard:hover {
   transform: translate(-10px, -10px);
 }
-
 /* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------CONTACT US PAGE STARTED------------------------------------------------------------ */
