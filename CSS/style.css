@@ -25,16 +25,19 @@ a {
 }
 .Visit-btn-color{
   background-color: #b42025 !important;
-  color: #000 !important;
+  color: whitesmoke !important;
   
 }
 .Visit-btn-color:hover{
-  background-color: #000 !important;
+  background-color: whitesmoke !important;
   color: #b42025 !important;
 
 }
 .rounded-5{
   border-radius: 5rem;
+}
+.z-index-10{
+  z-index: 10 !important;
 }
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 .text-justify{
@@ -699,12 +702,8 @@ body.applynowbody {
 }
 
 div.applynow-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
+  background-size: 100%;
   background-position: center center;
-  flex-shrink: initial;
   height: 40vh;
 }
 
