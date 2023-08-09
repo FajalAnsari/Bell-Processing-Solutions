@@ -42,9 +42,16 @@ body{
 .z-index-10{
   z-index: 10 !important;
 }
+.z-index-9{
+  z-index: 9 !important;
+}
 .text-justify{
   text-align: justify !important;
   text-justify: inter-word;
+}
+
+.box-shadow1{
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,.568);
 }
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 
@@ -117,17 +124,12 @@ li.nav-item:hover {
 }
 .typed {
   animation: fadeInText 2s ease-in-out forwards;
-
 }
 
 /* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
 
 
 /*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
-div.ourservices{
-  background-size: cover;
-  background-position: center;
-}
 .cards{
   transition: transform 0.2s ease-in-out;
 }
@@ -301,39 +303,6 @@ div.giftandloyalty-hero h1 {
 /* -----------------------------------------------------FRAUD BLASTER  PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------FREE ANALYSIS PAGE STARTED------------------------------------------------------------ */
-
-body.freeanalysisbody {
-  background: white;
-  background-color: white;
-}
-
-div.freeanalysis-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: initial;
-  height: 40vh;
-  margin-bottom: 20px;
-  /* filter: brightness(0.5); */
-}
-
-div.freeanalysis-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0),
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-div.freeanalysis {
-  margin: 0 8px 0 8px;
-  background-color: #1a1a1aa3;
-  color: white;
-  padding: 15px;
-}
 
 /* -----------------------------------------------------FREE ANALYSIS PAGE ENDED------------------------------------------------------------ */
 
