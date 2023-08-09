@@ -294,127 +294,17 @@ div.giftandloyalty-hero h1 {
 
 /* -----------------------------------------------------GIFT AND LOYALTY CARDS  PAGE ENDED------------------------------------------------------------ */
 
-/* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE STARTED------------------------------------------------------------ */
-
-/* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------FRAUD BLASTER  PAGE STARTED------------------------------------------------------------ */
-
-/* -----------------------------------------------------FRAUD BLASTER  PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------FREE ANALYSIS PAGE STARTED------------------------------------------------------------ */
-
-/* -----------------------------------------------------FREE ANALYSIS PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-
-
-/* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-/* ----------------------------------------------------- ABOUT PCI PAGE STARTED------------------------------------------------------------ */
-
-div.aboutpci-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  flex-shrink: initial;
-  height: 40vh;
-  margin-bottom: 20px;
-}
-div.aboutpci-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.aboutpci-hero h1 {
-    font-size: 3rem;
-  }
-}
-/* ----------------------------------------------------- ABOUT PCI PAGE ENDED------------------------------------------------------------ */
-
 /* ----------------------------------------------------- PCI FAQS PAGE STARTED------------------------------------------------------------ */
-body.pcifaqsbody {
-  background: white;
-  background-color: white;
+
+
+.bg-color-faq{
+  background-color: #b42025;
+}
+.rotate-90{
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(45deg);
 }
 
-div.pcifaqs-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  flex-shrink: initial;
-  height: 40vh;
-  /* filter: brightness(0.5); */
-  margin-bottom: 20px;
-}
-div.pcifaqs-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pcifaqs-hero h1 {
-    font-size: 3rem;
-  }
-}
-
-/* Faqs Section Started */
-
-div.faq {
-  display: flex;
-  padding: 20px;
-  border-radius: 20px;
-  color: white;
-}
-div.q-and-a {
-
-  margin-top: 20px;
-}
-
-div.question {
-  display: flex;
-
-  margin-bottom: 10px;
-  cursor: pointer;
-  padding: 20px;
-
-  background-color: rgba(128, 128, 128, 0.492);
-
-}
-
-span.arrow {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-top: 10px solid #000;
-  border-left: 10px solid#000;
-  border-bottom: 10px solid #000;
-  border-right: 10px solid #000;
-  border-radius: 50%;
-  transform: rotate(-45deg);
-  margin-right: 10px;
-}
-
-span.question-text {
-  font-weight: bold;
-}
-
-div.answer {
-  display: none;
-  padding: 10px;
-  font-weight: 900;
-  color: rgba(128, 128, 128, 0.492);
-}
 /* Faqs Section Ended */
 
 /* ----------------------------------------------------- PCI FAQS PAGE ENDED------------------------------------------------------------ */

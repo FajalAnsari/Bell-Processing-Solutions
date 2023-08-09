@@ -35,16 +35,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /* Faqs Section functionality started */
-function toggleAnswer(questionId) {
-  var answer = document.getElementById('answer' + questionId);
-  var arrow = document.querySelector('.question:nth-child(' + questionId + ') .arrow');
-
-  if (answer.style.display === 'none') {
-    answer.style.display = 'block';
-    arrow.style.transform = 'rotate(-135deg)';
-  } else {
-    answer.style.display = 'none';
-    arrow.style.transform = 'rotate(-45deg)';
+function showans(val){
+  let ques = document.querySelector("#faqs").children;
+  for(i in ques){
+    try{
+      if(i===val && ques[i].children[1].classList.contains("d-none")){
+        ques[i].children[1].classList.remove('d-none')
+        ques[i].children[1].classList.add('d-block')
+        ques[i].children[0].children[1].classList.add('rotate-90')
+      }
+      else{
+        ques[i].children[1].classList.remove('d-block');
+        ques[i].children[1].classList.add('d-none');
+        ques[i].children[0].children[1].classList.remove('rotate-90')
+      }
+    }
+    catch(e){
+      
+    }
   }
 }
 
