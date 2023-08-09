@@ -6,6 +6,63 @@
 a {
   text-decoration: none;
 }
+body{
+  background: white;
+  background-color: white;
+}
+/* -------------------------------------------Comman CSS of text---------------------------------------------- */
+.fw-600{
+  font-weight: 600;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-400{
+  font-weight: 400;
+}
+.h-15rem{
+  height: 15rem;
+}
+.bg-color-light{
+  background-color: #f7f7f7;
+}
+.Visit-btn-color{
+  background-color: #b42025 !important;
+  color: whitesmoke !important;
+  
+}
+.Visit-btn-color:hover{
+  background-color: whitesmoke !important;
+  color: #b42025 !important;
+
+}
+.rounded-5{
+  border-radius: 5rem;
+}
+.z-index-10{
+  z-index: 10 !important;
+}
+.text-justify{
+  text-align: justify !important;
+  text-justify: inter-word;
+}
+/* -------------------------------------------Comman CSS of text End---------------------------------------------- */
+
+/* -------------------------------------------------Images After navbar in Each page---------------------------------------- */
+.img-after-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+}
+
+/* -------------------------------------------------Images After navbar in Each page end---------------------------------------- */
+.img-size{
+  max-width: 25%;
+  max-height: 25%;
+}
 
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
 nav.navbar {
@@ -40,20 +97,9 @@ li.nav-item:hover {
   margin: 0 auto;
 }
 /* Images Text */
-.centered {
+.caros-text-box {
   color: whitesmoke;
-  font-size: 3rem;
-  font-weight: bolder;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@media (max-width: 500px) {
-  .centered {
-    font-size: 1.9rem;
-  }
 }
 /* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
 
@@ -69,8 +115,6 @@ li.nav-item:hover {
     opacity: 1;
   }
 }
-
-
 .typed {
   animation: fadeInText 2s ease-in-out forwards;
 
@@ -79,119 +123,16 @@ li.nav-item:hover {
 /* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
 
 
-
-
-
-
-/* -----------------------------------------------------WHAT DO WE DO PART STARTED ---------------------------------------------------------------- */
-
-.header-content {
-  padding: 40px;
-  background-color: #007bff;
-  color: #fff;
-}
-
-h2.text-center {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 576px) {
-  h2 {
-    text-align: center;
-  }
-}
-
-.about-description {
-  font-size: 1rem;
-  padding: 20px;
-  background-color: rgba(255, 166, 0, 0.625);
-  border-radius: 10px;
-}
-
-.about-description p {
-  margin-bottom: 1rem;
-}
-
-/* -----------------------------------------------------WHAT DO WE DO PART ENDED----------------------------------------------------- */
-
 /*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
-h1.ourservices {
-  text-align: center;
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(90deg, #33cc99, #66cc99, #99cc99);
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  animation: gradientAnimation 5s linear infinite;
+div.ourservices{
+  background-size: cover;
+  background-position: center;
 }
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.cards{
+  transition: transform 0.2s ease-in-out;
 }
-
-@media (max-width: 450px) {
-  h1.ourservices {
-    font-size: 2rem;
-  }
-}
-
-div.pands {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-div.servicecards {
-  /*   border-color: rgb(88, 160, 232);
- */ /* border-width: 5px; */
-  margin: 10px;
-  background-color: #fdb7138c;
-  /*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- */
-
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Classic box shadow */
-}
-
-/* div.servicecards:hover {
-  box-shadow:black 2px;
-} */
-img.serviceimg {
-  border-color: black;
-  border-width: 5px;
-}
-
-a.servicebtn {
-  border-color: black;
-  border-width: 2px;
-}
-
-a.servicebtn:hover {
-  background-color: #fdb71393;
-  border-color: black;
-}
-
-div.viewmorebtn {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 0 0;
-}
-
-button.view-more {
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Classic box shadow */
-  padding: 20px 40px 20px 40px;
+.cards:hover{
+  transform: translate(-10px,-10px);
 }
 /*---------------------------------------------------------------OUR SERVICES PART ENDED ----------------------------------------------------------------------*/
 
@@ -232,148 +173,24 @@ h2.text-center {
 /*---------------------------------------------------------------OUR CLIENTS PART ENDED ----------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------TESTIMONIALS PART STARTED ----------------------------------------------------------------------*/
-h1.testimonials {
-  text-align: center;
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: transparent; 
-  background-clip: text; 
-  background-image: linear-gradient(
-    90deg,
-    #33cccc,
-    #66cc99
-  ); 
-  -webkit-background-clip: text; 
-  text-transform: uppercase;
-  letter-spacing: 2px; 
-  animation: gradientAnimation 5s linear infinite; 
-}
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@media (max-width: 450px) {
-  h1.testimonials {
-    font-size: 2rem;
-  }
-}
-
-.bubble {
-  --r: 25px; /* the radius */
-  --t: 30px; /* the size of the tail */
-
-  max-width: 500px;
-  padding: calc(2 * var(--r) / 3);
-  -webkit-mask: radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%)
-      var(--_d) 100% / calc(100% - var(--r)) var(--t) no-repeat,
-    conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r) / -2)
-      calc(var(--r) / -2) padding-box,
-    radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0 / var(--r) var(--r) space
-      padding-box;
-  background: #8e38a1 border-box;
-  color: whitesmoke;
-  margin-bottom: 10px;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-.bubble:hover {
-
-  transform: translate(0, -10px);
-}
-.left {
-  --_d: 100%;
-  border-right: var(--t) solid #0000;
-  margin-left: var(--t);
-  place-self: end;
-  margin-top: 20px;
-}
 
 /*--------------------------------------------------------TESTIMONIALS PART ENDED ----------------------------------------------------------------------*/
 
 /* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE STARTED------------------------------------------------------------ */
 
-div.ccanddc-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.ccanddc-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.ccanddc-hero h1 {
-    font-size: 2rem;
-  }
-}
 
 /* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
-div.ecommerce_mailorde-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.ecommerce_mailorde-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.ecommerce_mailorde-hero h1 {
-    font-size: 2rem;
-  }
-}
 
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
 div.merchantcash-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-size: cover;
   background-position: center center;
-  flex-shrink: initial;
   height: 40vh;
-}
-
-div.merchantcash-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
 }
 
 div.merchantform {
@@ -407,37 +224,10 @@ div.merchantform {
   #part2 .form-control:focus {
     background-color: rgba(255, 255, 255, 0.532);
   }
-
-
-
-
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------Check Guarantee PAGE STARTED------------------------------------------------------------ */
-div.checkguarantee-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
 
-div.checkguarantee-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.checkguarantee-hero h1 {
-    font-size: 2rem;
-  }
-}
 
 /* -----------------------------------------------------Check Guarantee PAGE ENDED------------------------------------------------------------ */
 
@@ -558,31 +348,6 @@ div.prepaid-hero h1 {
 
 /* -----------------------------------------------------FRAUD BLASTER  PAGE STARTED------------------------------------------------------------ */
 
-div.fraudblaster-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.fraudblaster-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0),
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.fraudblaster-hero h1 {
-    font-size: 2rem;
-  }
-}
-
 /* -----------------------------------------------------FRAUD BLASTER  PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------FREE ANALYSIS PAGE STARTED------------------------------------------------------------ */
@@ -668,22 +433,7 @@ div.pcicompliance-hero h1 {
 
 /* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
 /* ----------------------------------------------------- ABOUT PCI PAGE STARTED------------------------------------------------------------ */
-body.aboutpci {
-  background: whitesmoke;
-  background-color: whitesmoke;
-}
-div.aboutpcibody {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: 0 10px 10px 10px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: rgba(244, 255, 127, 0.278);
-}
+
 div.aboutpci-hero {
   display: flex;
   justify-content: center;
@@ -691,7 +441,6 @@ div.aboutpci-hero {
   background-size: cover;
   flex-shrink: initial;
   height: 40vh;
-  /* filter: brightness(0.5); */
   margin-bottom: 20px;
 }
 div.aboutpci-hero h1 {
@@ -873,90 +622,24 @@ div.pbcp h1 {
 /* ----------------------------------------------------- PCI COMPLIANCE PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
-
-body.applynowbody {
-  background: whitesmoke;
-  background-color: whitesmoke;
+select option{
+  background-color: #333;
 }
-
-div.applynow-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
+button.applynowsubmit:hover{
+  color: #b42025 !important;
+  background-color: whitesmoke !important;
 }
-
-div.applynow-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-  text-align: center;
-}
-
-div.applynowform {
-  margin: 0 30px 10px 30px;
-  background-color: rgba(127, 255, 212, 0.349);
-  padding: 10px 20px 10px 20px;
-  border-radius: 10px;
-  background-size: cover;
-  box-shadow: 0 0 5px rgba(128, 128, 128, 0.806);
-}
-
-div.applynowsubmit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button.applynowsubmit:hover {
-  background-color: #ffffff6b;
-}
-
 input.apn,
 select.apn {
   color: whitesmoke;
   background-color: transparent;
 }
-
-div.callcard {
-  text-align: center;
-  margin: 0 30px 10px 30px;
-  padding: 10px;
-  border-radius: 10px;
-
-  position: relative;
-  transition: transform 0.1s ease;
+.callcard {
+  transition: transform 0.2s ease-in-out;
 }
-
-div.callcard:hover {
-  animation: shake 0.3s ease;
+.callcard:hover {
+  transform: translate(-10px, -10px);
 }
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translate(-1px, -1px);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate(1px, 1px);
-  }
-}
-
 /* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------CONTACT US PAGE STARTED------------------------------------------------------------ */

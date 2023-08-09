@@ -29,72 +29,47 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="applynowbody">
-    <header id="navbar"></header>
-    <main>
-      <div
-        class="applynow-hero img-fluid"
-        style="
-          background-image: url(IMAGES/paper-clipboard-with-text-sign-up-now-2022-09-27-01-05-35-utc.jpeg);
-        "
-      >
-        <h1>APPLY NOW</h1>
-      </div>
-      <br /><br />
-      <div class="applynowform" style="  background-image: url(IMAGES/orange-tourist-tent-illuminated-from-inside-stands-2022-02-08-22-39-23-utc.jpg); color: whitesmoke;   ">
-        <div>
-          <h1
-            style="
-              text-align: center;
-              font-size: 2rem;
-              font-weight: bold;
-              text-transform: capitalize;
-              margin: 0 8px 10px 8px;
-              color: whitesmoke;
-              text-shadow: -1px -1px 1px whitesmoke;
-            "
-          >
-            
-              Fill out the form below to recieve <br />
-              a free quote for Unsecured working capital.
-            
-          </h1>
-          <hr style="margin: 0 0 10px 0;">
+  <body class="">
+    <nav class="sticky-bottom navbar navbar-expand-lg bg-light z-index-10" id="navbar"></nav>
+    <div class="img-after-nav" style="background-image: url(Image/Apply.jpg); ">
+      <h1 class="text-light fw-bold">APPLY NOW</h1>
+    </div>
+    <main class="container mb-5">
+      <div class="applynowform border border-3 rounded-5 bg-dark text-light px-5 py-4">
+        <div class="fs-2 fw-500 text-center mb-4">
+              Fill out the form below to recieve
+              a free quote for Unsecured working capital. 
         </div>
-        <form class="row g-3" method="get" id="form" novalidate>
-          <div class="col-md-6 input-group-md">
-            <label for="name" class="form-label"
-              >Full Name <span style="color: red">*</span></label
-            >
+        <form class="row g-3 justify-content-center justify-content-lg-around" method="get" id="form" novalidate>
+          <div class="col-10 col-lg-5 input-group-lg">
+            <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
             <input
               type="text"
-              class="form-control apn"
+              class="form-control apn" autocomplete="off"
               id="name"
               name="name"
-              placeholder="Enter Your Full Name"
-
-            />
+              placeholder="Enter Your Full Name">
             <div id="nameError" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
-            <label for="name" class="form-label"
+          <div class="col-10 col-lg-5 input-group-lg">
+            <label for="name" class="form-label" 
               >Company Name <span style="color: red">*</span></label
             >
             <input
               type="text"
               class="form-control apn"
               id="name1"
-              name="name"
+              name="name" autocomplete="off"
               placeholder="Please Enter Your Company Name"
             />
             <div id="nameError1" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
+          <div class="col-10 col-lg-5 input-group-lg">
             <label for="email" class="form-label"
               >Email Address <span style="color: red">*</span></label
             >
             <input
-              type="email"
+              type="email" autocomplete="off"
               class="form-control apn"
               id="email"
               name="email"
@@ -102,33 +77,33 @@
             />
             <div id="emailError" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
+          <div class="col-10 col-lg-5 input-group-lg">
             <label for="mobile" class="form-label"
               >Primary Phone Number <span style="color: red">*</span></label
             >
             <input
               type="tel"
-              class="form-control apn"
+              class="form-control apn" autocomplete="off"
               id="mobile"
               name="mobile"
               placeholder="Enter Your Mobile Number"
             />
             <div id="mobileError" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
+          <div class="col-10 col-lg-5 input-group-lg">
             <label for="mobile" class="form-label"
               >Secondary Phone Number <span style="color: red">*</span></label
             >
             <input
               type="tel"
-              class="form-control apn"
+              class="form-control apn" autocomplete="off"
               id="mobile1"
               name="mobile"
               placeholder="Enter Your Mobile Number"
             />
             <div id="mobileError1" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
+          <div class="col-10 col-lg-5 input-group-lg">
             <label for="inputState" class="form-label">
               State <span style="color: red">*</span></label
             >
@@ -192,7 +167,7 @@
             </select>
             <div id="selectError" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
+          <div class="col-10 col-lg-5 input-group-lg">
             <label for="inputState" class="form-label"
               >Accepting Credit Cards? <span style="color: red">*</span></label
             >
@@ -207,13 +182,13 @@
             </select>
             <div id="selectError1" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
+          <div class="col-10 col-lg-5 input-group-lg">
             <label for="inputState" class="form-label"
               >Monthly Credit Card Sales
               <span style="color: red">*</span></label
             >
             <select
-              class="form-select form-select-md mb-3 apn"
+              class="form-select form-select-sm mb-3 apn"
               aria-label=".form-select-lg example"
               id="selectOption2"
             >
@@ -235,7 +210,7 @@
             </select>
             <div id="selectError2" class="error-message"></div>
           </div>
-          <div class="col-md-6 input-group-md">
+          <div class="col-10 col-lg-5 input-group-lg">
             <label for="inputState" class="form-label"
               >Time in Business <span style="color: red">*</span></label
             >
@@ -259,28 +234,18 @@
             </select>
             <div id="selectError3" class="error-message"></div>
           </div>
-          <div class="col-12 applynowsubmit">
-            <button
-              type="submit"
-              class="btn applynowsubmit"
-              style="
-                font-size: 1.1rem;
-                border: 2px solid gray;
-                width: 100%;
-                margin-bottom: 10px;
-                color: whitesmoke;
-              "
-            >
+          <div class="col-10 applynowsubmit text-center mx-auto">
+            <button type="submit" class="btn applynowsubmit bg-danger text-light text-center w-75 fw-400">
               Submit
             </button>
           </div>
         </form>
-      </div>
-      <h1 style="font-size: 3rem; font-weight: bold; text-align: center;"><i>OR</i></h1>
-      <div style="background-color: white;" class="callcard" >
-           <h2><strong>Give Us A Call On Our</strong> </h2><br>
-           <h3 style="font-size: 3rem; font-weight: bold">Toll Free Number: 1.877.911.BELL</h3><br>
-           <h3 style="font-size: 3rem; font-weight: bold"> Local Number: 212.624.4641 </h3>
+        <h1 class="fs-1 fw-500 mt-5 text-center">OR</h1>
+        <div class="callcard text-center mt-5 mb-3" >
+             <h2>Give Us A Call On Our</h2><br>
+             <h3 class="fs-2 fw-500">Toll Free Number: 1.877.911.BELL</h3><br>
+             <h3 class="fs-2 fw-500"> Local Number: 212.624.4641 </h3>
+        </div>
       </div>
     </main>
     <footer id="footer"></footer>
