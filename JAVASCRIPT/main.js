@@ -282,10 +282,9 @@ function setValidClass(input) {
 }
 
 
-/////////////////////////////////////MERCHANT PAGE FORM VALIDATION LOGIC//////////////////////////////////////////
+// --------------------------------------MERCHANT PAGE FORM VALIDATION LOGIC-------------------------------------------
 
 
-let currentStep = 1;
 
 function showStep(stepNumber) {
   document.getElementById(`part${stepNumber}`).style.display = "flex";
@@ -296,10 +295,11 @@ function hideStep(stepNumber) {
   document.getElementById(`part${stepNumber}`).style.display = "none";
 }
 
+let currentStep=1;
 function nextStep() {
   const form = document.getElementById("form");
   let isValid = true;
-
+  console.log(`part${currentStep}`)
   if (currentStep === 1) {
     isValid = validateStep1();
   } else if (currentStep === 2) {

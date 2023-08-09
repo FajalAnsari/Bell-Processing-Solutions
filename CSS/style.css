@@ -261,31 +261,6 @@ div.mcr-hero h1 {
 /* -----------------------------------------------------MCR PAGE ENDED------------------------------------------------------------ */
 /* -----------------------------------------------------MCPAY PAGE STARTED------------------------------------------------------------ */
 
-div.mpay-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.mpay-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.mpay-hero h1 {
-    font-size: 2rem;
-  }
-}
-
 /* -----------------------------------------------------MCPAY PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------GIFT AND LOYALTY CARDS  PAGE STARTED------------------------------------------------------------ */
@@ -318,31 +293,6 @@ div.giftandloyalty-hero h1 {
 /* -----------------------------------------------------GIFT AND LOYALTY CARDS  PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE STARTED------------------------------------------------------------ */
-
-div.prepaid-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.prepaid-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.prepaid-hero h1 {
-    font-size: 2rem;
-  }
-}
 
 /* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE ENDED------------------------------------------------------------ */
 
@@ -388,48 +338,7 @@ div.freeanalysis {
 /* -----------------------------------------------------FREE ANALYSIS PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-body.pcicombody {
-  background: white;
-  background-color: white;
-}
 
-div.pci {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: 0 10px 10px 10px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: rgba(244, 255, 127, 0.278);
-}
-div.pcicompliance-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: initial;
-  height: 40vh;
-  /* filter: brightness(0.5); */
-  margin-bottom: 20px;
-}
-div.pcicompliance-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
-    -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pcicompliance-hero h1 {
-    font-size: 3rem;
-  }
-}
 
 /* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
 /* ----------------------------------------------------- ABOUT PCI PAGE STARTED------------------------------------------------------------ */
@@ -543,35 +452,6 @@ div.answer {
 
 /* ----------------------------------------------------- PCI SECURITY PAGE STARTED------------------------------------------------------------ */
 
-body.pcisecuritybody {
-  background: whitesmoke;
-  background-color: whitesmoke;
-}
-
-div.pcisecurity-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-  margin-bottom: 20px;
-}
-div.pcisecurity-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pcisecurity-hero h1 {
-    font-size: 3rem;
-  }
-}
 
 div.pcis {
   margin: 0 0px 0 0px;
@@ -583,41 +463,6 @@ div.pcis {
 /* ----------------------------------------------------- PCI SECURITY PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-
-body.pcicompliancebody {
-  background: whitesmoke;
-  background-color: whitesmoke;
-}
-
-div.pcicompliance-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-  /* filter: brightness(0.5); */
-  /*  margin-top: -40px; */
-  margin-bottom: 20px;
-}
-
-div.pbcp {
-  margin: 0 8px 0 8px;
-  background-color: rgba(246, 99, 126, 0.252);
-  padding: 5px;
-  border-radius: 5px;
-}
-div.pbcp h1 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pbcp h1 {
-    font-size: 2rem;
-  }
-}
 
 /* ----------------------------------------------------- PCI COMPLIANCE PAGE ENDED------------------------------------------------------------ */
 
