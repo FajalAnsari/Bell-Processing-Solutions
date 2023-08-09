@@ -189,6 +189,12 @@ h2.text-center {
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
+.input-bg-img{
+  background-color: white;
+}
+
+
+
 div.merchantcash-hero {
   background-size: cover;
   background-position: center center;

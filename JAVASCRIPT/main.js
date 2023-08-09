@@ -1,38 +1,3 @@
-//////////////////////////////////////NAVBAR DROP DOWN LOGIC/////////////////////////////////////////////////////////
-
-$(document).ready(function () {
-  $(".dropdown").on("show.bs.dropdown", function () {
-    $(this).find(".dropdown-menu").first().stop(true, true).slideDown(200);
-  });
-
-  $(".dropdown").on("hide.bs.dropdown", function () {
-    $(this).find(".dropdown-menu").first().stop(true, true).slideUp(200);
-  });
-});
-
-
-
-
-
-
-///////////////////////////////////////////////CAROUSEL SLIDING LOGIC//////////////////////////////////////////////////////
-
-document.addEventListener('DOMContentLoaded', function () {
-  var myCarousel = new bootstrap.Carousel(document.getElementById('carousel'),
-    {
-      interval: 3000,
-      wrap: true // Set to false if you want the carousel to stop at the last slide
-    });
-});
-
-
-
-
-///////////////////////////////// View more and view less button functionality for cards display*//////////////////////////////
-
-///////////////////////////////// View more and view less button functionality for cards display ENDED*////////////////////////////
-
-
 
 /* Faqs Section functionality started */
 function showans(val){
@@ -79,7 +44,7 @@ const selectOption2 = document.getElementById('selectOption2');
 const selectError2 = document.getElementById('selectError2');
 const selectOption3 = document.getElementById('selectOption3');
 const selectError3 = document.getElementById('selectError3');
-
+console.log(fullName)
 
 form.addEventListener('submit', (e) => {
   if (checkInputs()) {
@@ -292,7 +257,21 @@ function setValidClass(input) {
 
 // --------------------------------------MERCHANT PAGE FORM VALIDATION LOGIC-------------------------------------------
 
+let form1 = document.getElementById("form1");
+let form2 = document.getElementById("form2");
+console.log(form1+"\t"+form2);
+// form1.addEventListener(onsubmit,nextfunc)
+// function nextfunc(){
+//   console.log("New")
+// }
 
+
+
+
+
+
+
+let currentStep=1;
 
 function showStep(stepNumber) {
   document.getElementById(`part${stepNumber}`).style.display = "flex";
@@ -303,7 +282,6 @@ function hideStep(stepNumber) {
   document.getElementById(`part${stepNumber}`).style.display = "none";
 }
 
-let currentStep=1;
 function nextStep() {
   const form = document.getElementById("form");
   let isValid = true;
