@@ -189,11 +189,6 @@ h2.text-center {
 /* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
-.input-bg-img{
-  background-color: white;
-}
-
-
 
 div.merchantcash-hero {
   background-size: cover;
@@ -208,30 +203,6 @@ div.merchantform {
   display: flex;
 }
 
-
-  #part1,
-  #part2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #part1 .input-group-md,
-  #part2 .input-group-md {
-    max-width: 300px; 
-  }
-
-  #part1 .input-group-md,
-  #part2 .input-group-md {
-    margin: 5px;
-  }
-
-  #part1 .form-control:focus,
-  #part2 .form-control:focus {
-    background-color: rgba(255, 255, 255, 0.532);
-  }
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------Check Guarantee PAGE STARTED------------------------------------------------------------ */
@@ -334,10 +305,6 @@ div.pcis {
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
 select option{
   background-color: #333;
-}
-button.applynowsubmit:hover{
-  color: #b42025 !important;
-  background-color: whitesmoke !important;
 }
 input.apn,
 select.apn {

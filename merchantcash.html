@@ -70,23 +70,23 @@
                owners. Since the process is streamlined and convenient, many owners see the value in access to future revenue today.
             </div>
 
-            <div class="container mt-5 form-container">
+            <div class="container my-5 form-container">
           
-              <div class="container mt-5 merchantform" style="background-image: url(IMAGES/sierra-nevada-2022-02-08-22-39-28-utc.jpg); font-size: 1.2rem; padding: 10px; ">
+              <div class="container py-5 merchantform" style="background-image: url(IMAGES/sierra-nevada-2022-02-08-22-39-28-utc.jpg); font-size: 1.2rem; padding: 10px; ">
                 
-                  <form id="form" class="row g-3 card-body " novalidate>
+                  <form id="form" class="card-body " autocomplete="off">
                     <h1 class="text-center mb-4">
-                      Qualify Now <br> <span style="color: red">In 3 Simple Steps</span>
+                      Qualify Now <br> <span class = "text-danger">In 3 Simple Steps</span>
                     </h1>
-                    <div id="part1"  >
+                    <div id="part1" class="row justify-content-center" >
                       <!-- Step 1: Funds Requested, Total Monthly Revenue, Monthly Processing Volume -->
-                      <div class=" col-md-6  input-group-md merf" style="text-align: center;">
+                      <div class="input-group-md col-10 col-lg-7 mb-3">
                         <label for="fundsRequested" class="form-label"
-                          >Funds Requested <span style="color: red">*</span></label
+                          >Funds Requested <span class = "text-danger">*</span></label
                         >
                         <input
                           type="text"
-                          class="form-control is-valid"
+                          class="form-control"
                           id="fundsRequested"
                           required
                         />
@@ -94,13 +94,13 @@
                           Please enter the Funds Requested.
                         </div>
                       </div>
-                      <div class="col-md-6  input-group-md">
+                      <div class="input-group-md col-10 col-lg-7 mb-3">
                         <label for="totalMonthlyRevenue" class="form-label"
                           >Total Monthly Revenue
-                          <span style="color: red">*</span></label
+                          <span class = "text-danger">*</span></label
                         >
                         <select
-                          class="form-select is-valid"
+                          class="form-select"
                           id="totalMonthlyRevenue"
                           required
                         >
@@ -118,13 +118,13 @@
                           Please select the Total Monthly Revenue.
                         </div>
                       </div>
-                      <div class="col-md-6 input-group-md">
+                      <div class="input-group-md col-10 col-lg-7 mb-3">
                         <label for="monthlyProcessingVolume" class="form-label"
                           >Monthly Processing Volume
-                          <span style="color: red">*</span></label
+                          <span class = "text-danger">*</span></label
                         >
                         <select
-                          class="form-select is-valid"
+                          class="form-select"
                           id="monthlyProcessingVolume"
                           required
                         >
@@ -155,27 +155,27 @@
                         </div>
                       </div>
                     </div>
-                    <div id="part2" style="display: none">
+                    <div id="part2" class="row justify-content-center d-none">
                       <!-- Step 2: Full Name, Company Name, Email Address, Phone Number, State -->
-                      <div class="col-md-6 input-group-md">
+                      <div class="col-10 col-lg-7 mb-3 input-group-md">
                         <label for="fullName" class="form-label"
-                          >Full Name <span style="color: red">*</span></label
+                          >Full Name <span class = "text-danger">*</span></label
                         >
                         <input
                           type="text"
-                          class="form-control is-valid"
+                          class="form-control "
                           id="fullName"
                           required
                         />
                         <div class="invalid-feedback">Please enter your Full Name.</div>
                       </div>
-                      <div class="col-md-6 input-group-md">
+                      <div class="col-10 col-lg-7 mb-3 input-group-md">
                         <label for="companyName" class="form-label"
-                          >Company Name <span style="color: red">*</span></label
+                          >Company Name <span class = "text-danger">*</span></label
                         >
                         <input
                           type="text"
-                          class="form-control is-valid"
+                          class="form-control "
                           id="companyName"
                           required
                         />
@@ -183,13 +183,13 @@
                           Please enter your Company Name.
                         </div>
                       </div>
-                      <div class="col-md-6 input-group-md">
+                      <div class="col-10 col-lg-7 mb-3 input-group-md">
                         <label for="email" class="form-label"
-                          >Email Address <span style="color: red">*</span></label
+                          >Email Address <span class = "text-danger">*</span></label
                         >
                         <input
                           type="email"
-                          class="form-control is-valid"
+                          class="form-control "
                           id="email"
                           required
                         />
@@ -197,13 +197,13 @@
                           Please enter a valid Email Address.
                         </div>
                       </div>
-                      <div class="col-md-6 input-group-md">
+                      <div class="col-10 col-lg-7 mb-3 input-group-md">
                         <label for="phoneNumber" class="form-label"
-                          >Phone Number <span style="color: red">*</span></label
+                          >Phone Number <span class = "text-danger">*</span></label
                         >
                         <input
                           type="tel"
-                          class="form-control is-valid"
+                          class="form-control "
                           id="phoneNumber"
                           required
                         />
@@ -211,11 +211,11 @@
                           Please enter a valid Phone Number.
                         </div>
                       </div>
-                      <div class="col-md-6 input-group-md">
+                      <div class="col-10 col-lg-7 mb-3 input-group-md">
                         <label for="state" class="form-label"
-                          >State <span style="color: red">*</span></label
+                          >State <span class = "text-danger">*</span></label
                         >
-                        <select class="form-select is-valid" id="state" required>
+                        <select class="form-select " id="state" required>
                           <option value="">Choose Your State</option>
                           <option value="AL">Alabama</option> 
                           <option value="AK">Alaska</option> 
@@ -272,7 +272,7 @@
                         <div class="invalid-feedback">Please select your State.</div>
                       </div>
                     </div>
-                    <div id="successMessage" style="display: none">
+                    <div id="successMessage" class="d-none mx-3">
                       
                       <p class="text-center">
                         <strong>Congratulations,</strong><br />Based on the information
@@ -281,14 +281,13 @@
                         contact you.
                       </p>
                     </div>
-                    <div class="col-12 applynowsubmit text-center">
+                    <div class="col-12 text-center">
                       <button
                         type="button"
-                        class="btn applynowsubmit"
-                        style="color: white; "
+                        class="btn Visit-btn-color"
                         onclick="nextStep()"
                       >
-                        NEXT
+                        Next
                       </button>
                     </div>
                   </form>
