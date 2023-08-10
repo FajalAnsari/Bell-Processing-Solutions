@@ -1,57 +1,30 @@
-//////////////////////////////////////NAVBAR DROP DOWN LOGIC/////////////////////////////////////////////////////////
-
-$(document).ready(function () {
-  $(".dropdown").on("show.bs.dropdown", function () {
-    $(this).find(".dropdown-menu").first().stop(true, true).slideDown(200);
-  });
-
-  $(".dropdown").on("hide.bs.dropdown", function () {
-    $(this).find(".dropdown-menu").first().stop(true, true).slideUp(200);
-  });
-});
-
-
-
-
-
-
-///////////////////////////////////////////////CAROUSEL SLIDING LOGIC//////////////////////////////////////////////////////
-
-document.addEventListener('DOMContentLoaded', function () {
-  var myCarousel = new bootstrap.Carousel(document.getElementById('carousel'),
-    {
-      interval: 3000,
-      wrap: true // Set to false if you want the carousel to stop at the last slide
-    });
-});
-
-
-
-
-///////////////////////////////// View more and view less button functionality for cards display*//////////////////////////////
-
-///////////////////////////////// View more and view less button functionality for cards display ENDED*////////////////////////////
-
-
 
 /* Faqs Section functionality started */
-function toggleAnswer(questionId) {
-  var answer = document.getElementById('answer' + questionId);
-  var arrow = document.querySelector('.question:nth-child(' + questionId + ') .arrow');
-
-  if (answer.style.display === 'none') {
-    answer.style.display = 'block';
-    arrow.style.transform = 'rotate(-135deg)';
-  } else {
-    answer.style.display = 'none';
-    arrow.style.transform = 'rotate(-45deg)';
+function showans(val){
+  let ques = document.querySelector("#faqs").children;
+  for(i in ques){
+    try{
+      if(i===val && ques[i].children[1].classList.contains("d-none")){
+        ques[i].children[1].classList.remove('d-none')
+        ques[i].children[1].classList.add('d-block')
+        ques[i].children[0].children[1].classList.add('rotate-90')
+      }
+      else{
+        ques[i].children[1].classList.remove('d-block');
+        ques[i].children[1].classList.add('d-none');
+        ques[i].children[0].children[1].classList.remove('rotate-90')
+      }
+    }
+    catch(e){
+      
+    }
   }
 }
 
 /* Faqs Section functionality Ended */
 
 
-//////////////////////////////APPLY NOW FORM AND CONTACT US FORM VALIDATIONS LOGIC //////////////////////////////////////////////////////
+//////////////////////////////APPLY NOW FORM VALIDATIONS LOGIC //////////////////////////////////////////////////////
 
 const fullName = document.getElementById('name');
 const fullNameError = document.getElementById('nameError');
@@ -71,7 +44,7 @@ const selectOption2 = document.getElementById('selectOption2');
 const selectError2 = document.getElementById('selectError2');
 const selectOption3 = document.getElementById('selectOption3');
 const selectError3 = document.getElementById('selectError3');
-
+console.log(fullName)
 
 form.addEventListener('submit', (e) => {
   if (checkInputs()) {
@@ -279,74 +252,4 @@ function setInvalidClass(input) {
 function setValidClass(input) {
   input.classList.remove('is-invalid');
   input.classList.add('is-valid');
-}
-
-
-/////////////////////////////////////MERCHANT PAGE FORM VALIDATION LOGIC//////////////////////////////////////////
-
-
-let currentStep = 1;
-
-function showStep(stepNumber) {
-  document.getElementById(`part${stepNumber}`).style.display = "flex";
-  document.getElementById("successMessage").style.display = "none";
-}
-
-function hideStep(stepNumber) {
-  document.getElementById(`part${stepNumber}`).style.display = "none";
-}
-
-function nextStep() {
-  const form = document.getElementById("form");
-  let isValid = true;
-
-  if (currentStep === 1) {
-    isValid = validateStep1();
-  } else if (currentStep === 2) {
-    isValid = validateStep2();
-  }
-
-  if (isValid) {
-    form.classList.remove("was-validated");
-    hideStep(currentStep);
-    currentStep++;
-
-    if (currentStep === 3) {
-      // Show success message after completing all steps
-      document.getElementById("successMessage").style.display = "block";
-      document.querySelector('button[onclick="nextStep()"]').style.display = "none"; // Hide the "NEXT" button
-    } else {
-      showStep(currentStep);
-    }
-  } else {
-    form.classList.add("was-validated");
-  }
-}
-
-function validateStep1() {
-  // Validation logic for Step 1 form fields
-  const fundsRequested = document.getElementById("fundsRequested").value;
-  const totalMonthlyRevenue = document.getElementById("totalMonthlyRevenue").value;
-  const monthlyProcessingVolume = document.getElementById("monthlyProcessingVolume").value;
-
-  if (!fundsRequested || !totalMonthlyRevenue || !monthlyProcessingVolume) {
-    return false;
-  }
-
-  return true;
-}
-
-function validateStep2() {
-  // Validation logic for Step 2 form fields
-  const fullName = document.getElementById("fullName").value;
-  const companyName = document.getElementById("companyName").value;
-  const email = document.getElementById("email").value;
-  const phoneNumber = document.getElementById("phoneNumber").value;
-  const state = document.getElementById("state").value;
-
-  if (!fullName || !companyName || !email || !phoneNumber || !state) {
-    return false;
-  }
-
-  return true;
 }

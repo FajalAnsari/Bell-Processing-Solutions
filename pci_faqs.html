@@ -1,150 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BELL PROCESSING SOLUTIONS</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script>
-      jQuery(document).ready(function () {
-        jQuery("#navbar").load("navbar.html");
-        jQuery("#footer").load("footer.html");
-      });
-    </script>
-    <script
-      src="https://kit.fontawesome.com/91b027ae4c.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body class="pcifaqsbody">
-    <nav class="sticky-bottom navbar navbar-expand-lg bg-light" id="navbar"></nav>
-    <main>
-      <div
-        class="pcifaqs-hero img-fluid"
-        style="
-          background-image: url(IMAGES/background-texture-of-printed-question-marks-2022-12-16-12-34-39-utc.jpg);
-        "
-      >
-        <h1>PCI FAQ'S</h1>
-      </div>
-      <hr>
-      <h1 style="text-align: center; font-weight: 800; font-size: 3rem">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BELL PROCESSING SOLUTIONS</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      jQuery("#navbar").load("navbar.html");
+      jQuery("#footer").load("footer.html");
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/91b027ae4c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+  <nav class="sticky-top navbar navbar-expand-lg bg-light" id="navbar"></nav>
+  <div class="img-after-nav" style="
+        background-image: url(Image/faq.jpg);
+      ">
+    <h1 class="text-light fw-bold">PCI FAQ'S</h1>
+  </div>
+  <main class="container-fluid  text-light">
+    <div class="container bg-dark border rounded-5 my-5 py-5 py-5">
+      <div class="fs-1 fw-bold text-center mb-5">
         Frequently Asked Questions
-      </h1>
-      <hr> 
-      <div class="q-and-a" style="color: white; background-color: rgba(255, 255, 255, 0.61);">
-        <div class="question" onclick="toggleAnswer(1)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            > What is PCI DSS?
-          </span>
-        </div>
-        <div class="answer" id="answer1">
-            PCI DSS - (Payment Card Industry Data Security Standard) - is a worldwide information security standard that helps prevent credit card fraud th4ough increased controls around data and its exposure to compromise.
-        </div>
-        <div class="question" onclick="toggleAnswer(2)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            > Who does the PCI Data Security Standards Compliance Program apply to?
-          </span>
-        </div>
-        <div class="answer" id="answer2">
-            The program encompasses all merchants and third party service providers that store, process, or transmit cardholder data.
-        </div>
-        <div class="question" onclick="toggleAnswer(3)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >What are the benefits of being PCI compliant?
-          </span>
-        </div>
-        <div class="answer" id="answer3">
-            It is good business practice to adhere to the PCI standards and protect cardholder information. Additionally, Visa®, MasterCard®, and Discover® Network may impose fines on their member banking institutions when merchants do not comply with PCI Data Security Standards.
-        </div>
-        <div class="question" onclick="toggleAnswer(4)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >What is "cardholder data"?
-          </span>
-        </div>
-        <div class="answer" id="answer4">
-            Cardholder data is any personally identifiable data associated with a cardholder. This could be a name, address, account number, expiration date, social security number, etc. The account number is the critical component that makes the PCI Data Security Standards applicable. The PCI Data Security Standards apply to all cardholder data stored, processed, or transmitted.
-        </div>
-        <div class="question" onclick="toggleAnswer(5)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >Are Level 4 merchants ever required to validate their compliance?
-          </span>
-        </div>
-        <div class="answer" id="answer5">
-            Yes. If a Level 4 merchant is deemed to be a "High Risk" merchant, they are required to validate compliance with the PCI Data Security Standards.
-        </div>
-        <div class="question" onclick="toggleAnswer(6)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >What is a "High Risk" merchant?
-          </span>
-        </div>
-        <div class="answer" id="answer6">
-            Currently, merchants that are known to use non-compliant payment applications applications known to store magnetic stripe, Cardholder Verification Value (CVV), or Cardholder Verification Value 2(CVV2) or Card Validation Code 2 (CVC2) or Card Identification (CID) fall into this "High Risk" category.
-        </div>
-        <div class="question" onclick="toggleAnswer(7)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >When is it acceptable to store magnetic stripe data?
-        </div>
-        <div class="answer" id="answer7">
-            It is never acceptable to retain magnetic stripe data subsequent to transaction authorization.
-        </div>
-        <div class="question" onclick="toggleAnswer(8)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >What if a merchant does not store cardholder data?
-          </span>
-        </div>
-        <div class="answer" id="answer8">
-            If a merchant does not store cardholder data, the PCI Data Security Standards still apply to the environment that transmits or processes cardholder data. This includes any service providers that a merchant uses.
-        </div>
-        <div class="question" onclick="toggleAnswer(9)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >Are there fines if cardholder data is compromised?
-          </span>
-        </div>
-        <div class="answer" id="answer9">
-            Yes. If cardholder data that you are responsible for is compromised, you may be subject to the following liabilities and fines associated with non-compliance:<br><br>
-            Potential fines of up to $500,000 (in the discretion of Visa, MasterCard, Discover Network or other card companies).<br><br>
-            Cost of re-issuing cards associated with the compromise.<br><br>
-            All fraud losses incurred from the use of the compromised account numbers from the date of compromise forward.<br><br>
-            Cost of any additional fraud prevention/detection activities required by the card associations (i.e. a forensic audit) or costs incurred by credit card issuers associated with the compromise (i.e. additional monitoring of system for fraudulent activity).
-        </div>
-        <div class="question" onclick="toggleAnswer(10)">
-          <span class="arrow"></span>
-          <span class="question-text"
-            >Is there a cost to complete the PCI DSS certification process?
-          </span>
-        </div>
-        <div class="answer" id="answer10">
-            Yes. However, we have kept the cost to a minimum. Most of our competitors charge 2 and 3 times and some even 5 times the amount we charge. Keep in mind that the nominal fee that's charged is nothing compared to the possible fines and penalities.
-        </div>
       </div>
-    </main>
-    <footer id="footer" style="background-color: rgba(0, 0, 0, 0.692)"></footer>
-    <script src="JAVASCRIPT/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      <div id="faqs">
+
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('0')">
+            <div class="col-9 fw-lighter fs-6">
+              What is PCI DSS?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            PCI DSS - (Payment Card Industry Data Security Standard) - is a worldwide
+            information security standard that helps prevent credit card fraud th4ough increased controls around data
+            and its exposure to compromise.
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('1')">
+            <div class="col-9 fw-lighter fs-6">
+              Who does the PCI Data Security Standards Compliance Program apply to?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            The program encompasses all merchants and third party service providers that store, process, or transmit
+            cardholder data.
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('2')">
+            <div class="col-9 fw-lighter fs-6">
+              What are the benefits of being PCI compliant?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            It is good business practice to adhere to the PCI standards and protect cardholder information.
+            Additionally, Visa®, MasterCard®,
+            and Discover® Network may impose fines on their member banking institutions when merchants do not comply
+            with PCI Data Security Standards
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('3')">
+            <div class="col-9 fw-lighter fs-6">
+              What is "cardholder data"?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            Cardholder data is any personally identifiable data associated with a cardholder. This could be a name,
+            address, account number,
+            expiration date, social security number, etc. The account number is the critical component that makes the
+            PCI Data Security
+            Standards applicable. The PCI Data Security Standards apply to all cardholder data stored, processed, or
+            transmitted.
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('4')">
+            <div class="col-9 fw-lighter fs-6">
+              Are Level 4 merchants ever required to validate their compliance?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            Yes. If a Level 4 merchant is deemed to be a "High Risk" merchant, they are required to validate compliance
+            with the PCI Data Security Standards.
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('5')">
+            <div class="col-9 fw-lighter fs-6">
+              What is a "High Risk" merchant?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            Currently, merchants that are known to use non-compliant payment applications (applications known to store
+            magnetic stripe, Cardholder
+            Verification Value (CVV), or Cardholder Verification Value 2(CVV2) or Card Validation Code 2 (CVC2) or Card
+            Identification (CID) fall
+            into this "High Risk" category.
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('6')">
+            <div class="col-9 fw-lighter fs-6">
+              When is it acceptable to store magnetic stripe data?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            It is never acceptable to retain magnetic stripe data subsequent to transaction authorization.
+
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('7')">
+            <div class="col-9 fw-lighter fs-6">
+              What if a merchant does not store cardholder data?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            If a merchant does not store cardholder data, the PCI Data Security Standards still apply to the environment
+            that transmits or processes
+            cardholder data. This includes any service providers that a merchant uses.
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('8')">
+            <div class="col-9 fw-lighter fs-6">
+              Are there fines if cardholder data is compromised?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            Yes. If cardholder data that you are responsible for is compromised, you may be subject to the following
+            liabilities and fines associated with non-compliance:
+            Potential fines of up to $500,000 (in the discretion of Visa, MasterCard, Discover Network or other card
+            companies).
+            Cost of re-issuing cards associated with the compromise.
+            All fraud losses incurred from the use of the compromised account numbers from the date of compromise
+            forward.
+            Cost of any additional fraud prevention/detection activities required by the card associations (i.e. a
+            forensic audit) or costs incurred by credit card issuers associated with
+            the compromise (i.e. additional monitoring of system for fraudulent activity).
+          </div>
+        </div>
+        <div class="text-light mb-5">
+          <div
+            class="row justify-content-between  align-items-center bg-color-faq px-1 px-lg-5 py-3 mx-5 border border-0 rounded-5"
+            role="button" onclick="showans('9')">
+            <div class="col-9 fw-lighter fs-6">
+              Is there a cost to complete the PCI DSS certification process?
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-plus fs-3" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="d-none  bg-light text-dark mt-2 px-3 text-justify px-lg-5 py-3 mx-5 border border-0 rounded-5 fs-6 fw-lighter">
+            Yes. However, we have kept the cost to a minimum. Most of our competitors charge 2 and 3 times
+             and some even 5 times the amount we charge. Keep in mind that the nominal fee that's charged is
+              nothing compared to the possible fines and penalities.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer id="footer" style="background-color: rgba(0, 0, 0, 0.692)"></footer>
+  <script src="JAVASCRIPT/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
