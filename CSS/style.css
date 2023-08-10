@@ -18,6 +18,10 @@ select{
   overflow-y: scroll;
 }
 /* -------------------------------------------Comman CSS of text---------------------------------------------- */
+.font-roboto{
+  font-family: 'roboto',sans-serif;
+}
+
 .fw-600{
   font-weight: 600;
 }
@@ -57,17 +61,12 @@ select{
   text-justify: inter-word;
 }
 .box-shadow1{
-  box-shadow: inset 0 0 0 2000px rgba(44 24 24 / 57%);
+  box-shadow: inset 0 0 0 2000px rgba(0 0 0 / 57%);
 }
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 
 /* -------------------------------------------------Images After navbar in Each page---------------------------------------- */
-.img-after-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
+.vh-40{
   height: 40vh;
 }
 
@@ -199,7 +198,6 @@ div.merchantform {
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- PCI FAQS PAGE STARTED------------------------------------------------------------ */
-
 
 .bg-color-faq{
   background-color: #b42025;
