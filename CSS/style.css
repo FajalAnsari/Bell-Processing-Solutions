@@ -10,6 +10,13 @@ body{
   background: white;
   background-color: white;
 }
+select option{
+  color: whitesmoke;
+  font-size: medium;
+}
+select{
+  overflow-y: scroll;
+}
 /* -------------------------------------------Comman CSS of text---------------------------------------------- */
 .fw-600{
   font-weight: 600;
@@ -42,9 +49,15 @@ body{
 .z-index-10{
   z-index: 10 !important;
 }
+.z-index-9{
+  z-index: 9 !important;
+}
 .text-justify{
   text-align: justify !important;
   text-justify: inter-word;
+}
+.box-shadow1{
+  box-shadow: inset 0 0 0 2000px rgba(44 24 24 / 57%);
 }
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 
@@ -117,17 +130,12 @@ li.nav-item:hover {
 }
 .typed {
   animation: fadeInText 2s ease-in-out forwards;
-
 }
 
 /* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
 
 
 /*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
-div.ourservices{
-  background-size: cover;
-  background-position: center;
-}
 .cards{
   transition: transform 0.2s ease-in-out;
 }
@@ -172,21 +180,9 @@ h2.text-center {
 
 /*---------------------------------------------------------------OUR CLIENTS PART ENDED ----------------------------------------------------------------------*/
 
-/*---------------------------------------------------------------TESTIMONIALS PART STARTED ----------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------TESTIMONIALS PART ENDED ----------------------------------------------------------------------*/
-
-/* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE STARTED------------------------------------------------------------ */
-
-
-/* -----------------------------------------------------CREDIT AND DEBIT CARD PROCESSING PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------E-Commerce and Mail Order Merchants PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
+
 div.merchantcash-hero {
   background-size: cover;
   background-position: center center;
@@ -200,378 +196,25 @@ div.merchantform {
   display: flex;
 }
 
-
-  #part1,
-  #part2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #part1 .input-group-md,
-  #part2 .input-group-md {
-    max-width: 300px; 
-  }
-
-  #part1 .input-group-md,
-  #part2 .input-group-md {
-    margin: 5px;
-  }
-
-  #part1 .form-control:focus,
-  #part2 .form-control:focus {
-    background-color: rgba(255, 255, 255, 0.532);
-  }
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
-/* -----------------------------------------------------Check Guarantee PAGE STARTED------------------------------------------------------------ */
-
-
-/* -----------------------------------------------------Check Guarantee PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------MCR PAGE STARTED------------------------------------------------------------ */
-
-div.mcr-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.mcr-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.mcr-hero h1 {
-    font-size: 2rem;
-  }
-}
-
-/* -----------------------------------------------------MCR PAGE ENDED------------------------------------------------------------ */
-/* -----------------------------------------------------MCPAY PAGE STARTED------------------------------------------------------------ */
-
-div.mpay-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.mpay-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.mpay-hero h1 {
-    font-size: 2rem;
-  }
-}
-
-/* -----------------------------------------------------MCPAY PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------GIFT AND LOYALTY CARDS  PAGE STARTED------------------------------------------------------------ */
-
-div.giftandloyalty-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.giftandloyalty-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.giftandloyalty-hero h1 {
-    font-size: 2rem;
-  }
-}
-
-/* -----------------------------------------------------GIFT AND LOYALTY CARDS  PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE STARTED------------------------------------------------------------ */
-
-div.prepaid-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-}
-
-div.prepaid-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.prepaid-hero h1 {
-    font-size: 2rem;
-  }
-}
-
-/* -----------------------------------------------------PrePaid Debit & Payroll Cards  PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------FRAUD BLASTER  PAGE STARTED------------------------------------------------------------ */
-
-/* -----------------------------------------------------FRAUD BLASTER  PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------FREE ANALYSIS PAGE STARTED------------------------------------------------------------ */
-
-body.freeanalysisbody {
-  background: white;
-  background-color: white;
-}
-
-div.freeanalysis-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: initial;
-  height: 40vh;
-  margin-bottom: 20px;
-  /* filter: brightness(0.5); */
-}
-
-div.freeanalysis-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px -1px 1px rgb(0, 0, 0),
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-div.freeanalysis {
-  margin: 0 8px 0 8px;
-  background-color: #1a1a1aa3;
-  color: white;
-  padding: 15px;
-}
-
-/* -----------------------------------------------------FREE ANALYSIS PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-body.pcicombody {
-  background: white;
-  background-color: white;
-}
-
-div.pci {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: 0 10px 10px 10px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: rgba(244, 255, 127, 0.278);
-}
-div.pcicompliance-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: initial;
-  height: 40vh;
-  /* filter: brightness(0.5); */
-  margin-bottom: 20px;
-}
-div.pcicompliance-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
-    -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pcicompliance-hero h1 {
-    font-size: 3rem;
-  }
-}
-
-/* -----------------------------------------------------PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-/* ----------------------------------------------------- ABOUT PCI PAGE STARTED------------------------------------------------------------ */
-
-div.aboutpci-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  flex-shrink: initial;
-  height: 40vh;
-  margin-bottom: 20px;
-}
-div.aboutpci-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
-    -1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.aboutpci-hero h1 {
-    font-size: 3rem;
-  }
-}
-/* ----------------------------------------------------- ABOUT PCI PAGE ENDED------------------------------------------------------------ */
-
 /* ----------------------------------------------------- PCI FAQS PAGE STARTED------------------------------------------------------------ */
-body.pcifaqsbody {
-  background: white;
-  background-color: white;
+
+
+.bg-color-faq{
+  background-color: #b42025;
+}
+.rotate-90{
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(45deg);
 }
 
-div.pcifaqs-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  flex-shrink: initial;
-  height: 40vh;
-  /* filter: brightness(0.5); */
-  margin-bottom: 20px;
-}
-div.pcifaqs-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pcifaqs-hero h1 {
-    font-size: 3rem;
-  }
-}
-
-/* Faqs Section Started */
-
-div.faq {
-  display: flex;
-  padding: 20px;
-  border-radius: 20px;
-  color: white;
-}
-div.q-and-a {
-
-  margin-top: 20px;
-}
-
-div.question {
-  display: flex;
-
-  margin-bottom: 10px;
-  cursor: pointer;
-  padding: 20px;
-
-  background-color: rgba(128, 128, 128, 0.492);
-
-}
-
-span.arrow {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-top: 10px solid #000;
-  border-left: 10px solid#000;
-  border-bottom: 10px solid #000;
-  border-right: 10px solid #000;
-  border-radius: 50%;
-  transform: rotate(-45deg);
-  margin-right: 10px;
-}
-
-span.question-text {
-  font-weight: bold;
-}
-
-div.answer {
-  display: none;
-  padding: 10px;
-  font-weight: 900;
-  color: rgba(128, 128, 128, 0.492);
-}
 /* Faqs Section Ended */
 
 /* ----------------------------------------------------- PCI FAQS PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- PCI SECURITY PAGE STARTED------------------------------------------------------------ */
 
-body.pcisecuritybody {
-  background: whitesmoke;
-  background-color: whitesmoke;
-}
-
-div.pcisecurity-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-  margin-bottom: 20px;
-}
-div.pcisecurity-hero h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke,
-    -1px 1px 1px whitesmoke, 1px 1px 1px whitesmoke;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pcisecurity-hero h1 {
-    font-size: 3rem;
-  }
-}
 
 div.pcis {
   margin: 0 0px 0 0px;
@@ -582,52 +225,10 @@ div.pcis {
 
 /* ----------------------------------------------------- PCI SECURITY PAGE ENDED------------------------------------------------------------ */
 
-/* ----------------------------------------------------- PCI COMPLIANCE PAGE STARTED------------------------------------------------------------ */
-
-body.pcicompliancebody {
-  background: whitesmoke;
-  background-color: whitesmoke;
-}
-
-div.pcicompliance-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-  /* filter: brightness(0.5); */
-  /*  margin-top: -40px; */
-  margin-bottom: 20px;
-}
-
-div.pbcp {
-  margin: 0 8px 0 8px;
-  background-color: rgba(246, 99, 126, 0.252);
-  padding: 5px;
-  border-radius: 5px;
-}
-div.pbcp h1 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  div.pbcp h1 {
-    font-size: 2rem;
-  }
-}
-
-/* ----------------------------------------------------- PCI COMPLIANCE PAGE ENDED------------------------------------------------------------ */
 
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
 select option{
   background-color: #333;
-}
-button.applynowsubmit:hover{
-  color: #b42025 !important;
-  background-color: whitesmoke !important;
 }
 input.apn,
 select.apn {
