@@ -44,7 +44,6 @@ const selectOption2 = document.getElementById('selectOption2');
 const selectError2 = document.getElementById('selectError2');
 const selectOption3 = document.getElementById('selectOption3');
 const selectError3 = document.getElementById('selectError3');
-console.log(fullName)
 
 form.addEventListener('submit', (e) => {
   if (checkInputs()) {
@@ -76,6 +75,10 @@ function checkFullNameValidity() {
     clearError(fullNameError);
     setValidClass(fullName);
     return true
+  }else{
+    setError(fullNameError, 'Name is required');
+    setInvalidClass(fullName);
+    return false
   }
 }
 

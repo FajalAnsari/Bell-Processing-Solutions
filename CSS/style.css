@@ -18,6 +18,10 @@ select{
   overflow-y: scroll;
 }
 /* -------------------------------------------Comman CSS of text---------------------------------------------- */
+.font-roboto{
+  font-family: 'roboto',sans-serif;
+}
+
 .fw-600{
   font-weight: 600;
 }
@@ -50,32 +54,23 @@ select{
   z-index: 10 !important;
 }
 .z-index-9{
-  z-index: 9 !important;
+  z-index: 9;
 }
 .text-justify{
   text-align: justify !important;
   text-justify: inter-word;
 }
 .box-shadow1{
-  box-shadow: inset 0 0 0 2000px rgba(44 24 24 / 57%);
+  box-shadow: inset 0 0 0 2000px rgba(0 0 0 / 57%);
 }
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 
 /* -------------------------------------------------Images After navbar in Each page---------------------------------------- */
-.img-after-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
+.vh-40{
   height: 40vh;
 }
 
 /* -------------------------------------------------Images After navbar in Each page end---------------------------------------- */
-.img-size{
-  max-width: 25%;
-  max-height: 25%;
-}
 
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
 nav.navbar {
@@ -96,44 +91,6 @@ li.nav-item:hover {
 }
 
 /* -------------------------------------------NAVBAR STYLING ENDED----------------------------------------------------*/
-/* -------------------------------------------SLIDING ANIMATION STYING STARTED----------------------------------------------------*/
-/*  Customize the carousel height and width */
-#carousel {
-  width: 100%;
-  max-width: auto;
-  margin: 0 auto;
-}
-
-/*  Center the images within the carousel */
-#carousel .carousel-inner img {
-  display: block;
-  margin: 0 auto;
-}
-/* Images Text */
-.caros-text-box {
-  color: whitesmoke;
-  transform: translate(-50%, -50%);
-}
-/* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
-
-
-
-
-/* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
-@keyframes fadeInText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.typed {
-  animation: fadeInText 2s ease-in-out forwards;
-}
-
-/* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
-
 
 /*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
 .cards{
@@ -149,13 +106,6 @@ li.nav-item:hover {
 /* Custom styles for the "Our Clients" section */
 #our-clients {
   background-color: #f7f7f7;
-  padding: 40px 0;
-}
-
-h2.text-center {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
 }
 
 .client-logo {
@@ -183,26 +133,16 @@ h2.text-center {
 
 /* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
 
-div.merchantcash-hero {
-  background-size: cover;
-  background-position: center center;
-  height: 40vh;
-}
-
 div.merchantform {
   background-size: cover;
-  color: white;
-  border-radius: 5px;
-  display: flex;
 }
 
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
 
 /* ----------------------------------------------------- PCI FAQS PAGE STARTED------------------------------------------------------------ */
 
-
 .bg-color-faq{
-  background-color: #b42025;
+  background-color: grey;
 }
 .rotate-90{
   transition: transform 0.2s ease-in-out;
@@ -212,18 +152,6 @@ div.merchantform {
 /* Faqs Section Ended */
 
 /* ----------------------------------------------------- PCI FAQS PAGE ENDED------------------------------------------------------------ */
-
-/* ----------------------------------------------------- PCI SECURITY PAGE STARTED------------------------------------------------------------ */
-
-
-div.pcis {
-  margin: 0 0px 0 0px;
-  background-color: #4683b455;
-  border-radius: 0px;
-  padding: 5px;
-}
-
-/* ----------------------------------------------------- PCI SECURITY PAGE ENDED------------------------------------------------------------ */
 
 
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
@@ -242,77 +170,6 @@ select.apn {
   transform: translate(-10px, -10px);
 }
 /* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
-
-/* -----------------------------------------------------CONTACT US PAGE STARTED------------------------------------------------------------ */
-body.contactusbody {
-  background: white;
-  background-color: white;
-}
-div.contactus-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center;
-  flex-shrink: initial;
-  height: 40vh;
-  margin-bottom: 20px;
-}
-div.contactus-hero h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px antiquewhite, 1px -1px 1px antiquewhite,
-    -1px 1px 1px antiquewhite, 1px 1px 1px antiquewhite;
-  text-align: center;
-}
-
-div.contactformsection {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-shrink: initial;
-  flex-wrap: wrap;
-  background-size: cover;
-}
-div.cdetails {
-  align-items: center;
-  text-align: center;
-  background-color: rgba(245, 245, 245, 0.668);
-  padding: 50px 40px 40px 40px;
-  /* border-radius: 50%; */
-}
-@media (max-width: 1400px) {
-  div.cdetails {
-    width: 100%;
-  }
-}
-div.form {
-  font-weight: bold;
-  padding: 30px;
-}
-div.form:hover {
-  background-color: rgba(245, 245, 245, 0.668);
-  transition: 1s;
-}
-
-input.cs,
-textarea.cs {
-  background-color: transparent;
-  border-color: white;
-}
-div.csbtn {
-  display: flex;
-  justify-content: center;
-}
-button.Submit {
-  width: 100%;
-  border-color: rgba(0, 255, 255, 0.468);
-  font-weight: 700;
-}
-button.Submit:hover {
-  background-color: rgba(0, 255, 255, 0.468);
-}
-/* -----------------------------------------------------CONTACT US PAGE ENDED------------------------------------------------------------ */
 
 /* ------------------------------------------------FOOTER STYLING----------------------------------------------------------------------------- */
 

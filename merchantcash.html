@@ -31,13 +31,16 @@
   </head>
   <body>
     <nav class="sticky-top navbar navbar-expand-lg bg-light" id="navbar"></nav>
-    <div
-      class="merchantcash-hero img-fluid d-flex justify-content-center align-items-center "
-      style="
-        background-image: url(IMAGES/closeup-of-hands-holding-cash-2022-12-16-00-15-48-utc.jpg);
-      "
-    >
-      <h1 class="fw-bold text-white">MERCHANT CASH</h1>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="box-shadow1 vh-40 w-100 position-absolute top-0 start-0 z-index-9"></div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Image/Merchant1.jpg" class="d-block w-100 vh-40" alt="...">
+          <div class="position-absolute top-50 start-50 translate-middle text-light text-center mx-3 mx-lg-5 px-lg-5 z-index-10 w-75">
+            <h1 class="fw-600 lh-base">Merchant Cash</h1>
+          </div>
+        </div>
+      </div>
     </div>
 
     <main class="container-fluid  text-light">
@@ -52,18 +55,25 @@
               not limited to):
               
             </div>
-            <div class="mb-3">
-              <ul class="list-unstyled mt-3 fw-lighter">
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Expanded Marketing Programs</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;New or Additional Equipment</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Renovations</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Additional Locations</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Value-Priced Inventory</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Operating Supplies</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Training Programs</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Security & Safety Measures</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Emergencies</li>
-              </ul>
+            <div class="row mb-3 fw-lighter gx-5 gy-lg-3 text-nowrap">
+              <div class="col">
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Expanded Marketing Programs</div>
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;New or Additional Equipment</div>
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Renovations</div>
+
+              </div>
+              <div class="col">
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Additional Locations</div>
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Value-Priced Inventory</div>
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Operating Supplies</div>
+
+              </div>
+              <div class="col">
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Training Programs</div>
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Security & Safety Measures</div>
+                <div class="mt-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Emergencies</div>
+
+              </div>
             </div>
             <div class="mb-3 text-justify" >
               Our Cash Advance funding program has become a main source of project financing for many small to mid-sized business
@@ -72,7 +82,7 @@
 
             <div class="container my-5 form-container">
           
-              <div class="container py-5 merchantform" style="background-image: url(IMAGES/sierra-nevada-2022-02-08-22-39-28-utc.jpg); font-size: 1.2rem; padding: 10px; ">
+              <div class="container py-5 merchantform d-flex rounded-3" style="background-image: url(Image/Merchant2.jpg)">
                 
                   <form id="form" class="card-body " autocomplete="off">
                     <h1 class="text-center mb-4">
@@ -88,6 +98,7 @@
                           type="text"
                           class="form-control"
                           id="fundsRequested"
+                          placeholder="Funds Requested"
                           required
                         />
                         <div class="invalid-feedback">
@@ -165,6 +176,7 @@
                           type="text"
                           class="form-control "
                           id="fullName"
+                          placeholder="Full Name"
                           required
                         />
                         <div class="invalid-feedback">Please enter your Full Name.</div>
@@ -177,6 +189,7 @@
                           type="text"
                           class="form-control "
                           id="companyName"
+                          placeholder="Company Name"
                           required
                         />
                         <div class="invalid-feedback">
@@ -191,6 +204,7 @@
                           type="email"
                           class="form-control "
                           id="email"
+                          placeholder="Email Address"
                           required
                         />
                         <div class="invalid-feedback">
@@ -205,6 +219,7 @@
                           type="tel"
                           class="form-control "
                           id="phoneNumber"
+                          placeholder="Phone Number"
                           required
                         />
                         <div class="invalid-feedback">
@@ -284,7 +299,7 @@
                     <div class="col-12 text-center">
                       <button
                         type="button"
-                        class="btn Visit-btn-color"
+                        class="btn Visit-btn-color px-5 py-2"
                         onclick="nextStep()"
                       >
                         Next
@@ -299,17 +314,24 @@
             <div class="mb-3 fw-500 fs-3 text-justify">
               Our Service Features
             </div>
-            <div class="mb-3">
-              <ul class="list-unstyled">
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Quick approval & funding</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;No out-of-pocket costs</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;No application fees</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;No closing costs</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;No fixed monthly payments</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;No monthly checks to write</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;Never any late fees</li>
-                <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;&nbsp;No personal collateral</li>
-              </ul>
+            <div class="row mb-3 fw-lighter gx-5 gy-lg-3 text-nowrap">
+              <div class="col">
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Quick approval & funding</div>
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;No out-of-pocket costs</div>
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;No application fees</div>
+
+              </div>
+              <div class="col">
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;No closing costs</div>
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;No fixed monthly payments</div>
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;No monthly checks to write</div>
+
+              </div>
+              <div class="col">
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Never any late fees</div>
+                <div class="mt-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;No personal collateral</div>
+
+              </div>
             </div>
             <div class="fs-5 fw-500">
               

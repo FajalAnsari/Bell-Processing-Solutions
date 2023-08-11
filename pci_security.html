@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>BELL PROCESSING SOLUTIONS</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style.css" >
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      rel="stylesheet">
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
-    />
+    >
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script>
       jQuery(document).ready(function () {
@@ -29,26 +25,33 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="pcisecuritybody">
+  <body>
+    <!-- -----------------------------------Navbar----------------------------------- -->
     <nav class="sticky-top navbar navbar-expand-lg bg-light" id="navbar"></nav>
-    <div
-      class="img-after-nav"
-      style="
-        background-image: url(IMAGES/closeup-rotation-dial-number-key-lock-on-safe-box-2023-01-30-01-28-44-utc.jpg);
-      "
-    >
-      <h1 class="text-light fw-bold">PCI SECURITY</h1>
+    <!-- -----------------------------------Carousel------------------------------------- -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="box-shadow1 vh-40 w-100 position-absolute top-0 start-0 z-index-9"></div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Image/PCI SECURITY1.jpg" class="d-block w-100 vh-40" alt="...">
+          <div class="position-absolute top-50 start-50 translate-middle text-light text-center mx-3 mx-lg-5 px-lg-5 z-index-10 w-75">
+            <h1 class="fw-600 lh-base">PCI Security</h1>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- -----------------------------------Card-Content------------------------------------- -->
     <main class="container-fluid  text-light">
       <div class="container bg-dark border rounded-5 my-5 py-5 py-5">
         <div class="fs-1 fw-bold text-center mb-5">
           SECURITY
         </div>
         <div class="row justify-content-center justify-content-lg-around align-items-center">
+          <!-- -----------------------------------Text-Content------------------------------------- -->
           <div class="col-10 fs-6 text-justify ">
             <div class="mb-3">
               Security and Protection is always an issue to merchants and business
-          owners. As a result of increased credit card fraud,<br />
+          owners. As a result of increased credit card fraud,<br >
           the Security Standards Council has made PCI compliance manatory.
             </div>
             <div class="mb-3">
@@ -61,8 +64,8 @@
             <div class="fs-4 fw-600">
               Bell PCI Security Implementation
             </div>
-            <div class="fs-5 fw-500 my-2 ms-2">
-              Security Check 1: Build and Maintain a Secure Network
+            <div class="fs-5 fw-500 my-2">
+              <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Security Check 1: Build and Maintain a Secure Network
             </div>
             <div class="mb-3 ps-4">
               Bell PCI has a firewall and router system to protect cardholder
@@ -72,8 +75,8 @@
           access from networks and hosts and deny direct public access to any
           information about the cardholder.
             </div>
-            <div class="fs-5 fw-500 my-2 ms-2">
-              Security Check 2: Protect Cardholder Data
+            <div class="fs-5 fw-500 my-2">
+              <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Security Check 2: Protect Cardholder Data
             </div>
             <div class="mb-3 ps-4">Cardholder data is secure in a cryptographic form. All information is
               encrypted when transmitting the data across public networks to prevent
@@ -83,8 +86,8 @@
               cardholder data. The physical access to Cardholder data is Monitored
               and restricted. All out-dated cardholder information is destroyed.
             </div>
-            <div class="fs-5 fw-500 my-2 ms-2">
-              Security Check 3: Regularly Monitor and Test Networks
+            <div class="fs-5 fw-500 my-2">
+              <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Security Check 3: Regularly Monitor and Test Networks
             </div>
             <div class="mb-3 ms-4">
               Bell PCI keeps system activity logs that trace all activity and review
@@ -95,8 +98,8 @@
           anti-virus software, security patches are installed on each computer
           to avoid exposing cardholder data.
             </div>
-            <div class="fs-5 fw-500 my-2 ms-2">
-              Security Check 4: Maintain an Information Security Policy
+            <div class="fs-5 fw-500 my-2">
+              <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Security Check 4: Maintain an Information Security Policy
             </div>
             <div class="mb-3 ms-4">
               Bell has an established security policy which covers all PCI DSS
@@ -115,21 +118,20 @@
               
             </div>
           </div>
-          <!-- <div class="col-10 col-lg-4 mt-5 mt-lg-0">
-    
-            <img src="IMAGES/finance-2022-11-15-23-13-44-utc.jpg" alt="" class="img-fluid">
-          </div>
-   -->
+        </div>
+        <!-- -----------------------------------Button------------------------------------- -->
+        <div class="fs-5 fw-500 pt-3 text-center mt-5">
+          <a href="contact_us.html" role="button" class="text-decoration-none Visit-btn-color my-5 px-3 py-3 rounded-3">
+            Contact Us
+          </a>
         </div>
   
       </div>
   
     </main>
+    <!-- -----------------------------------Footer------------------------------------- -->
     <footer id="footer" style="background-color: rgba(0, 0, 0, 0.692)"></footer>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
