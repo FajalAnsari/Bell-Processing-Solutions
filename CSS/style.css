@@ -71,10 +71,6 @@ select{
 }
 
 /* -------------------------------------------------Images After navbar in Each page end---------------------------------------- */
-.img-size{
-  max-width: 25%;
-  max-height: 25%;
-}
 
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
 nav.navbar {
@@ -95,44 +91,6 @@ li.nav-item:hover {
 }
 
 /* -------------------------------------------NAVBAR STYLING ENDED----------------------------------------------------*/
-/* -------------------------------------------SLIDING ANIMATION STYING STARTED----------------------------------------------------*/
-/*  Customize the carousel height and width */
-#carousel {
-  width: 100%;
-  max-width: auto;
-  margin: 0 auto;
-}
-
-/*  Center the images within the carousel */
-#carousel .carousel-inner img {
-  display: block;
-  margin: 0 auto;
-}
-/* Images Text */
-.caros-text-box {
-  color: whitesmoke;
-  transform: translate(-50%, -50%);
-}
-/* -------------------------------------------SLIDING ANIMATION STYING ENDED----------------------------------------------------*/
-
-
-
-
-/* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
-@keyframes fadeInText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.typed {
-  animation: fadeInText 2s ease-in-out forwards;
-}
-
-/* -------------------------------------------------FADING Effect in Slider----------------------------------------------*/
-
 
 /*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
 .cards{
@@ -148,13 +106,6 @@ li.nav-item:hover {
 /* Custom styles for the "Our Clients" section */
 #our-clients {
   background-color: #f7f7f7;
-  padding: 40px 0;
-}
-
-h2.text-center {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
 }
 
 .client-logo {
