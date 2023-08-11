@@ -51,10 +51,10 @@ select{
   border-radius: 5rem;
 }
 .z-index-10{
-  z-index: 10 !important;
+  z-index: 10;
 }
 .z-index-9{
-  z-index: 9 !important;
+  z-index: 9;
 }
 .text-justify{
   text-align: justify !important;
@@ -182,17 +182,8 @@ h2.text-center {
 
 /* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
 
-div.merchantcash-hero {
-  background-size: cover;
-  background-position: center center;
-  height: 40vh;
-}
-
 div.merchantform {
   background-size: cover;
-  color: white;
-  border-radius: 5px;
-  display: flex;
 }
 
 /* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
@@ -210,18 +201,6 @@ div.merchantform {
 /* Faqs Section Ended */
 
 /* ----------------------------------------------------- PCI FAQS PAGE ENDED------------------------------------------------------------ */
-
-/* ----------------------------------------------------- PCI SECURITY PAGE STARTED------------------------------------------------------------ */
-
-
-div.pcis {
-  margin: 0 0px 0 0px;
-  background-color: #4683b455;
-  border-radius: 0px;
-  padding: 5px;
-}
-
-/* ----------------------------------------------------- PCI SECURITY PAGE ENDED------------------------------------------------------------ */
 
 
 /* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
