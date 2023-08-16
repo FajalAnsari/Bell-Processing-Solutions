@@ -68,6 +68,9 @@ select{
 .vh-87{
   height: 87vh;
 }
+.filter{
+  filter: brightness(0.5);
+}
 /* -------------------------------------------------Images After navbar in Each page end---------------------------------------- */
 
 /* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
@@ -86,6 +89,15 @@ li.nav-item:hover {
   background-color: rgba(255, 255, 255, 0.158);
   margin: 2px 10px 2px 10px;
   border-radius: 5px;
+}
+.carousel-center{
+  font-size: medium;
+}
+@media screen and (max-width: 630px) and (min-width: 200px){
+  .carousel-center h1{
+    font-size: large;
+    width: 75%;
+  }
 }
 
 /* -------------------------------------------NAVBAR STYLING ENDED----------------------------------------------------*/
