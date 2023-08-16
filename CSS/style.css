@@ -59,6 +59,12 @@ select{
 .box-shadow1{
   box-shadow: inset 0 0 0 2000px rgba(0 0 0 / 57%);
 }
+.img-after-nav{
+  display: none;
+}
+.img-after-nav-lg{
+  display: block;
+}
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 
 /* -------------------------------------------------Images After navbar in Each page---------------------------------------- */
@@ -67,7 +73,7 @@ select{
 }
 /*filter Linked in Carousel of All Pages */
 .filter{
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 /* -------------------------------------------------Images After navbar in Each page end---------------------------------------- */
 
@@ -96,11 +102,31 @@ li.nav-item:hover {
     font-size: small;
     width: 100% !important;
   }
+  .carousel-credit h1{
+    font-size: x-large;
+    width: 100% !important;
+  }
+  .img-after-nav{
+    display: block;
+  }
+  .img-after-nav-lg{
+    display: none !important;
+  }
 }
 @media screen and (max-width: 700px) and (min-width: 420px){
   .carousel-center h1{
     font-size: medium;
     width: 100% !important;
+  }
+  .carousel-credit h1{
+    font-size: xx-large;
+    width: 100% !important;
+  }
+  .img-after-nav{
+    display: block;
+  }
+  .img-after-nav-lg{
+    display: none !important;
   }
 }
 
