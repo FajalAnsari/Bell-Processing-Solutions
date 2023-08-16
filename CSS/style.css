@@ -65,9 +65,7 @@ select{
 .vh-40{
   height: 40vh;
 }
-.vh-87{
-  height: 87vh;
-}
+/*filter Linked in Carousel of All Pages */
 .filter{
   filter: brightness(0.5);
 }
