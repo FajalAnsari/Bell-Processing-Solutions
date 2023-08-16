@@ -93,10 +93,16 @@ li.nav-item:hover {
 .carousel-center{
   font-size: medium;
 }
-@media screen and (max-width: 630px) and (min-width: 200px){
+@media screen and (max-width: 420px){
   .carousel-center h1{
-    font-size: large;
-    width: 75%;
+    font-size: small;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 420px){
+  .carousel-center h1{
+    font-size: medium;
+    width: 100% !important;
   }
 }
 
