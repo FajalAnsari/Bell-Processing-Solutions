@@ -68,9 +68,7 @@ select{
 /* -------------------------------------------Comman CSS of text End---------------------------------------------- */
 
 /* -------------------------------------------------Images After navbar in Each page---------------------------------------- */
-.vh-40{
-  height: 40vh;
-}
+
 /*filter Linked in Carousel of All Pages */
 .filter{
   filter: brightness(0.4);
@@ -97,6 +95,8 @@ li.nav-item:hover {
 .carousel-center{
   font-size: medium;
 }
+
+/* ---------------------------------Media Query-------------------------------- */
 @media screen and (max-width: 420px){
   .carousel-center h1{
     font-size: small;
