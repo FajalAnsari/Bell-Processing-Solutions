@@ -92,7 +92,27 @@ li.nav-item:hover {
 .carousel-center{
   font-size: medium;
 }
-
+#logo {
+	height: 100px;
+	width: 194px;
+	background: url("../Image/logo.png") 0 0 no-repeat;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#bell {
+	height: 41px;
+	width: 50px;
+	background: url("../Image/bell.png") 0 0 no-repeat;
+	position: absolute;
+	top: 20px;
+	left: 71px;
+	transform-origin: center 13px;
+	animation: bell 1s ease-in-out infinite alternate;
+}
+@keyframes bell {
+	0% { transform: rotate(-30deg) }
+	100% { transform: rotate(30deg) }
+}
 /* ---------------------------------Media Query-------------------------------- */
 @media screen and (max-width: 420px){
   .carousel-center h1{
